@@ -1,0 +1,5 @@
+*.class
+META-INF/
+*.o
+*.hi
+input.txt
