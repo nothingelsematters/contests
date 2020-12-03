@@ -2,12 +2,9 @@ data class Policy(val min: Int, val max: Int, val char: Char, val password: Stri
 
 fun main() {
     val regex = Regex("(?<min>\\d+)-(?<max>\\d+) (?<char>\\w): (?<pass>\\w+)")
-    val passwords = System.`in`.bufferedReader().useLines {
-        it.map {
-            val (min, max, char, pass) = regex.matchEntire(it)!!.destructured
-            Policy(min.toInt(), max.toInt(), char[0], pass)
-        }
-        .toList()
+    val passwords = mapLines {
+        val (min, max, char, pass) = regex.matchEntire(it)!!.destructured
+        Policy(min.toInt(), max.toInt(), char[0], pass)
     }
 
     val first = passwords.asSequence()

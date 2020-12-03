@@ -1,5 +1,5 @@
 fun main() {
-    val list = System.`in`.bufferedReader().useLines { lines -> lines.map { it.toInt() }.toList() }
+    val list = mapLines { it.toInt() }
 
     var first = 0
     var second = 0
