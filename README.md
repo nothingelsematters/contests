@@ -1,6 +1,8 @@
 # Contests
 
-![languages](https://img.shields.io/github/languages/count/nothingelsematters/contests?style=flat-square&logo=github)
-![top language](https://img.shields.io/github/languages/top/nothingelsematters/contests?style=flat-square&logo=kotlin&color=orange)
-
-+ [advent of code 2020](advent-of-code/2020) using Kotlin, Haskell, Rust, OCaml, PostgreSQL :christmas\_tree:
++ [advent of code 2020](advent-of-code/2020) :christmas\_tree: \
+  ![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)
+  ![Haskell](https://img.shields.io/badge/Haskell-grey?style=flat-square&logo=Haskell)
+  ![Rust](https://img.shields.io/badge/Rust-grey?style=flat-square&logo=Rust)
+  ![OCaml](https://img.shields.io/badge/OCaml-grey?style=flat-square&logo=OCaml)
+  ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-grey?style=flat-square&logo=PostgreSQL)
