@@ -6,3 +6,4 @@
   ![Rust](https://img.shields.io/badge/Rust-grey?style=flat-square&logo=Rust)
   ![OCaml](https://img.shields.io/badge/OCaml-grey?style=flat-square&logo=OCaml)
   ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-grey?style=flat-square&logo=PostgreSQL)
+  ![Scala](https://img.shields.io/badge/Scala-grey?style=flat-square&logo=Scala)
