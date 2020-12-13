@@ -8,3 +8,4 @@
   [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-grey?style=flat-square&logo=PostgreSQL)](advent-of-code/2020/Day10.sql)
   [![Scala](https://img.shields.io/badge/Scala-grey?style=flat-square&logo=Scala)](advent-of-code/2020/Day11.scala)
   [![Swift](https://img.shields.io/badge/Swift-grey?style=flat-square&logo=Swift)](advent-of-code/2020/Day12.swift)
+  [![Go](https://img.shields.io/badge/Go-grey?style=flat-square&logo=Go)](advent-of-code/2020/Day13.go)
