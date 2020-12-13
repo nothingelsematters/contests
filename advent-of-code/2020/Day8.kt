@@ -26,11 +26,11 @@ fun main() {
     }
 
     val first = launch(instructions).second
-    var second = instructions.indices
+    val second = instructions.indices
         .asSequence()
         .filter { instructions[it].first != "acc" }
         .mapNotNull { i ->
-            var pair = instructions[i]
+            val pair = instructions[i]
             instructions[i] = (if (pair.first == "jmp") "nop" else "jmp") to pair.second
             launch(instructions).also { instructions[i] = pair }
         }
