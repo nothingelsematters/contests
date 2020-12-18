@@ -13,4 +13,4 @@
   [![TypeScript](https://img.shields.io/badge/TypeScript-grey?style=flat-square&logo=TypeScript)](advent-of-code/2020/Day17.ts)
 
 + [yandex profi contest](yandex-profi-2020) :clown\_face: \
-  [![C++](https://img.shields.io/badge/C%2B%2B-grey?style=flat-square&logo=c%2B%2B)](yandex-profi-2020/sqrt-quantity.cpp)
+  [![C++](https://img.shields.io/badge/C%2B%2B-grey?style=flat-square&logo=c%2B%2B)](yandex-profi/sqrt-quantity.cpp)

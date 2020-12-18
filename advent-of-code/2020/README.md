@@ -1,23 +1,67 @@
 # [Advent Of Code 2020](https://adventofcode.com/2020/)
 
 - [Day 1: Report Repair](#day-1-report-repair)
+  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day1.kt)
+  [![Haskell](https://img.shields.io/badge/Haskell-grey?style=flat-square&logo=Haskell)](Day1.hs)
+
 - [Day 2: Password Philosophy](#day-2-password-philosophy)
+  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day2.kt)
+
 - [Day 3: Toboggan Trajectory](#day-3-toboggan-trajectory)
+  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day3.kt)
+
 - [Day 4: Passport Processing](#day-4-passport-processing)
+  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day4.kt)
+
 - [Day 5: Binary Boarding](#day-5-binary-boarding)
+  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day5.kt)
+
 - [Day 6: Custom Customs](#day-6-custom-customs)
+  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day6.kt)
+
 - [Day 7: Handy Haversacks](#day-7-handy-haversacks)
+  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day7.kt)
+
 - [Day 8: Handheld Halting](#day-8-handheld-halting)
+  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day8.kt)
+
 - [Day 9: Encoding Error](#day-9-encoding-error)
+  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day9.kt)
+  [![Rust](https://img.shields.io/badge/Rust-grey?style=flat-square&logo=Rust)](Day9.rs)
+
 - [Day 10: Adapter Array](#day-10-adapter-array)
+  [![OCaml](https://img.shields.io/badge/OCaml-grey?style=flat-square&logo=OCaml)](Day10.ml)
+  [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-grey?style=flat-square&logo=PostgreSQL)](Day10.sql)
+
 - [Day 11: Seating System](#day-11-seating-system)
+  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day11.kt)
+  [![Scala](https://img.shields.io/badge/Scala-grey?style=flat-square&logo=Scala)](Day11.scala)
+
 - [Day 12: Rain Risk](#day-12-rain-risk)
+  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day12.kt)
+  [![Swift](https://img.shields.io/badge/Swift-grey?style=flat-square&logo=Swift)](Day12.swift)
+
 - [Day 13: Shuttle Search](#day-13-shuttle-search)
+  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day13.kt)
+
 - [Day 14: Docking Data](#day-14-docking-data)
+  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day14.kt)
+
 - [Day 15: Rambunctious Recitation](#day-15-rambunctious-recitation)
+  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day15.kt)
+  [![Julia](https://img.shields.io/badge/Julia-grey?style=flat-square&logo=Julia)](Day15.jl)
+
 - [Day 16: Ticket Translation](#day-16-ticket-translation)
+  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day16.kt)
+
 - [Day 17: Conway Cubes](#day-17-conway-cubes)
+  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day17.kt)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-grey?style=flat-square&logo=TypeScript)](Day17.ts)
+
 - [Day 18: Operation Order](#day-18-operation-order)
+  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day18.kt)
+  [![lalr-generator](https://img.shields.io/badge/nothingelsematters-lalr--generator-blue?style=flat-square&logo=GitHub)](https://github.com/nothingelsematters/lalr-generator)
+
 
 ## [Day 1: Report Repair](https://adventofcode.com/2020/day/1)
 
@@ -268,10 +312,10 @@ You can continue to ignore the `cid` field, but each other field has strict rule
 + `iyr` (Issue Year) - four digits; at least `2010` and at most `2020`.
 + `eyr` (Expiration Year) - four digits; at least `2020` and at most `2030`.
 + `hgt` (Height) - a number followed by either `cm` or `in`:
-  
+
   + If `cm`, the number must be at least `150` and at most `193`.
   + If `in`, the number must be at least `59` and at most `76`.
-  
+
 
 + `hcl` (Hair Color) - a `#` followed by exactly six characters `0`-`9` or `a`-`f`.
 + `ecl` (Eye Color) - exactly one of: `amb` `blu` `brn` `gry` `grn` `hzl` `oth`.
