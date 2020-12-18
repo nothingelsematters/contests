@@ -1,0 +1,28 @@
+@grammar DayEighteenPartOne;
+
+lines @returns [Long]
+    : lines NEWLINE expression { $0 + $2 }
+    | lines NEWLINE            { $0 }
+    | expression               { $0 }
+    ;
+
+expression @returns [Long]
+    : expression PLUS other     { $0 + $2 }
+    | expression ASTERISK other { $0 * $2 }
+    | other                     { $0 }
+    ;
+
+other @returns [Long]
+    : number { $0 }
+    | OPENP expression CLOSEP { $1 }
+    ;
+
+number @returns [Long] : NUMBER { $0.text.toLong() };
+
+NUMBER : "\d+(\.\d+)?";
+WHITESPACES : "[\r\t ]+" -> skip;
+NEWLINE : "\n";
+ASTERISK : "\*";
+PLUS : "\+";
+OPENP : "\(";
+CLOSEP : "\)";
