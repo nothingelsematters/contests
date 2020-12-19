@@ -11,6 +11,7 @@
   [![Go](https://img.shields.io/badge/Go-grey?style=flat-square&logo=Go)](advent-of-code/2020/Day13.go)
   [![Julia](https://img.shields.io/badge/Julia-grey?style=flat-square&logo=Julia)](advent-of-code/2020/Day15.jl)
   [![TypeScript](https://img.shields.io/badge/TypeScript-grey?style=flat-square&logo=TypeScript)](advent-of-code/2020/Day17.ts)
+  [![Ruby](https://img.shields.io/badge/Ruby-grey?style=flat-square&logo=Ruby)](advent-of-code/2020/Day18.ts)
 
 + [yandex profi contest](yandex-profi-2020) :clown\_face: \
   [![C++](https://img.shields.io/badge/C%2B%2B-grey?style=flat-square&logo=c%2B%2B)](yandex-profi/sqrt-quantity.cpp)

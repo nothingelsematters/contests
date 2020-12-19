@@ -8,11 +8,7 @@ fun <K, V> Sequence<Pair<K, V>>.group(): MutableMap<K, MutableSet<V>> = groupBy(
     .toMutableMap()
 
 fun main() {
-    val (ruleStrings, myString, otherStrings) = System.`in`.bufferedReader()
-        .readText()
-        .splitToSequence("\n\n")
-        .map { it.split('\n') }
-        .toList()
+    val (ruleStrings, myString, otherStrings) = readBlocks().map { it.split('\n') }
 
     val mine = myString[1].splitInts()
     val others = otherStrings.drop(1).dropLast(1).map { it.splitInts() }

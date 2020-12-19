@@ -21,10 +21,7 @@ fun countValid(passports: List<Map<String, String>>, validator: (Map<String, Str
     passports.asSequence().filter(validator).count()
 
 fun main() {
-    val ids = System.`in`.bufferedReader()
-        .readText()
-        .split("\n\n")
-        .asSequence()
+    val ids = readBlocks().asSequence()
         .map {
             it.split(' ', '\n')
                 .asSequence()
