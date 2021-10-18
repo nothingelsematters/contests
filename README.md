@@ -18,3 +18,6 @@
 
 + [code wars](codewars) \
   ![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)
+
++ [leet code](leet-code) \
+  ![Rust](https://img.shields.io/badge/Rust-grey?style=flat-square&logo=Rust)
