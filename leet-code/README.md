@@ -3,6 +3,7 @@
 - [1. Two Sum](#1-two-sum)
 - [2. Add Two Numbers](#2-add-two-numbers)
 - [3. Longest Substring Without Repeating Characters](#3-longest-substring-without-repeating-characters)
+- [4. Median of Two Sorted Arrays](#4-median-of-two-sorted-arrays)
 - [9. Palindrome Number](#9-palindrome-number)
 
 ## 1. [Two Sum](https://leetcode.com/problems/two-sum/)
@@ -140,6 +141,66 @@ Output: 0
 
 - `0 <= s.length <= 5 * 104`
 - `s` consists of English letters, digits, symbols and spaces.
+
+## 4. [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
+
+> Hard
+>
+> [Solution](src/median_of_two_sorted_arrays.rs)
+>
+> `Runtime: 3 ms, faster than 70.85% of Rust online submissions for Median of Two Sorted Arrays.`
+>
+> `Memory Usage: 1.9 MB, less than 95.98% of Rust online submissions for Median of Two Sorted Arrays.`
+
+Given two sorted arrays `nums1` and `nums2` of size `m` and `n` respectively, return the median of the two sorted arrays.
+
+The overall run time complexity should be `O(log (m+n))`.
+
+## Example 1
+
+```
+Input: nums1 = [1,3], nums2 = [2]
+Output: 2.00000
+Explanation: merged array = [1,2,3] and median is 2.
+```
+
+## Example 2
+
+```
+Input: nums1 = [1,2], nums2 = [3,4]
+Output: 2.50000
+Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
+```
+
+## Example 3
+
+```
+Input: nums1 = [0,0], nums2 = [0,0]
+Output: 0.00000
+```
+
+## Example 4
+
+```
+Input: nums1 = [], nums2 = [1]
+Output: 1.00000
+```
+
+## Example 5
+
+```
+Input: nums1 = [2], nums2 = []
+Output: 2.00000
+```
+
+## Constraints
+
+- `nums1.length == m`
+- `nums2.length == n`
+- `0 <= m <= 1000`
+- `0 <= n <= 1000`
+- `1 <= m + n <= 2000`
+- `-10^6 <= nums1[i], nums2[i] <= 10^6`
 
 ## 9. [Palindrome Number](https://leetcode.com/problems/palindrome-number/)
 
