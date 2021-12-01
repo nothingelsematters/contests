@@ -4,3 +4,4 @@ META-INF/
 *.hi
 input.txt
 utils/
+.DS_Store
