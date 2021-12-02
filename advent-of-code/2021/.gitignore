@@ -1,6 +1,4 @@
 .gradle
 .idea
 build
-help.sh
-help/
-input.txt
+input
