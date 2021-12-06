@@ -1,30 +1,23 @@
-private fun getPopulationSize(timers: Map<Int, Long>, days: Int): Long {
-    var currentTimers = timers.toMutableMap()
+import java.util.Collections
+
+private const val BREED_TIMER = 6
+private const val BIRTH_TIMER = 8
+
+private fun getPopulationSize(timers: List<Long>, days: Int): Long {
+    val currentTimers = timers.toMutableList()
 
     repeat(days) {
-        val new = currentTimers[0] ?: 0L
-
-        currentTimers = currentTimers
-            .asSequence()
-            .filter { it.key != 0 }
-            .map { (key, value) -> key - 1 to value }
-            .toMap()
-            .toMutableMap()
-
-        currentTimers[8] = new
-        currentTimers.merge(6, new, Long::plus)
+        Collections.rotate(currentTimers, -1)
+        currentTimers[BREED_TIMER] += currentTimers[BIRTH_TIMER]
     }
 
-    return currentTimers.values.sum()
+    return currentTimers.sum()
 }
 
 fun main() {
-    val timers = readln()
-        .toInts(",")
-        .groupBy { it }
-        .map { (key, value) -> key to value.size.toLong() }
-        .toMap()
+    val timers = readln().toInts(",")
+    val timerNumbers = List(BIRTH_TIMER + 1) { index -> timers.count { it == index }.toLong() }
 
-    println(getPopulationSize(timers, 80))
-    println(getPopulationSize(timers, 256))
+    println(getPopulationSize(timerNumbers, 80))
+    println(getPopulationSize(timerNumbers, 256))
 }
