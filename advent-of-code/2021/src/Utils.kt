@@ -14,4 +14,6 @@ fun <T> mapBlocks(mapper: (String) -> T): MutableList<List<T>> =
 fun String.toInts(delimiter: String = " "): List<Int> =
     splitToSequence(delimiter).filter { it.isNotEmpty() }.map { it.toInt() }.toList()
 
-fun <T> T?.expect(): T = this ?: throw IllegalArgumentException("Invalid input")
+fun <T> T?.expect(): T = this ?: error("Invalid input")
+
+fun expect(): Nothing = error("Invalid Input")
