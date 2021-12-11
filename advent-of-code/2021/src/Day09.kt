@@ -19,13 +19,11 @@ fun main() {
 
     val optimums = mutableListOf<Point>()
 
-    for (i in lists.indices) {
-        for (j in lists[i].indices) {
-            neighbours(i to j)
-                .mapNotNull { (neighbourI, neighbourJ) -> lists.getOrNull(neighbourI)?.getOrNull(neighbourJ) }
-                .all { it > lists[i][j] }
-                .let { if (it) optimums += i to j }
-        }
+    lists.innerIndices.forEach { index ->
+        neighbours(index)
+            .mapNotNull { (neighbourI, neighbourJ) -> lists.getOrNull(neighbourI)?.getOrNull(neighbourJ) }
+            .all { it > lists[index] }
+            .let { if (it) optimums += index }
     }
 
     val first = optimums.sumOf { (i, j) -> 1 + lists[i][j] }
