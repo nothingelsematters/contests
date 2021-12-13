@@ -13,8 +13,8 @@ fun <T> mapBlocks(mapper: (String) -> T): MutableList<List<T>> =
         .map { it.lineSequence().map(mapper).toList() }
         .toMutableList()
 
-fun String.toInts(delimiter: String = " "): List<Int> =
-    splitToSequence(delimiter).filter { it.isNotEmpty() }.map { it.toInt() }.toList()
+fun String.toInts(vararg delimiters: String = arrayOf(" ", ",")): List<Int> =
+    splitToSequence(*delimiters).filter { it.isNotEmpty() }.map { it.toInt() }.toList()
 
 // Error handling utilities
 
@@ -32,3 +32,5 @@ operator fun <T> List<List<T>>.get(index: Pair<Int, Int>) = this[index.first][in
 operator fun <T> List<MutableList<T>>.set(index: Pair<Int, Int>, value: T) {
     this[index.first][index.second] = value
 }
+
+fun <T> List<T>.toPair() = component1() to component2()

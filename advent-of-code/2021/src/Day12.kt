@@ -61,10 +61,7 @@ private class Graph(edges: List<Pair<String, String>>) {
 }
 
 fun main() {
-    val edges = mapLines {
-        val (a, b) = it.split('-')
-        a to b
-    }
+    val edges = mapLines { it.split('-').toPair() }
     val graph = Graph(edges)
 
     println(graph.findPathNumber(0))
