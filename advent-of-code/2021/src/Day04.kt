@@ -24,7 +24,7 @@ private fun findWinner(numbers: List<Int>, boards: List<List<List<Int>>>, positi
 }
 
 fun main() {
-    val numbers = readln().toInts(",")
+    val numbers = readln().toInts()
     val boards = mapBlocks { it.toInts() }
 
     println(findWinner(numbers, boards, 1))
