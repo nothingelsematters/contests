@@ -34,3 +34,5 @@ operator fun <T> List<MutableList<T>>.set(index: Pair<Int, Int>, value: T) {
 }
 
 fun <T> List<T>.toPair() = component1() to component2()
+
+typealias Point = Pair<Int, Int>

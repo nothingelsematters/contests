@@ -1,5 +1,3 @@
-private typealias Point = Pair<Int, Int>
-
 private fun neighbours(point: Point): Sequence<Point> {
     val (i, j) = point
     return sequenceOf(i - 1 to j, i + 1 to j, i to j - 1, i to j + 1)
