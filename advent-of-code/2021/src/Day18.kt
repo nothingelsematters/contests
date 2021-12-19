@@ -150,9 +150,7 @@ private fun part1(numbers: List<SnailFishNumber>) =
         .magnitude()
 
 private fun part2(numbers: List<SnailFishNumber>) =
-    numbers
-        .asSequence()
-        .flatMap { j -> numbers.asSequence().map { it to j } }
+    (numbers cartesian numbers)
         .filter { (a, b) -> a !== b }
         .maxOfOrNull { (a, b) -> (a.deepCopy() + b.deepCopy()).magnitude() }
 

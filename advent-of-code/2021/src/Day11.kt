@@ -13,8 +13,7 @@ private fun flash(octopuses: List<List<Int>>, process: (octopuses: List<List<Int
                     currentOctopuses[index] = 0
 
                     val (i, j) = index
-                    (i - 1..i + 1)
-                        .flatMap { currentI -> (j - 1..j + 1).map { currentI to it } }
+                    ((i - 1..i + 1) cartesian (j - 1..j + 1))
                         .filter { (i, j) -> i in currentOctopuses.indices && j in currentOctopuses[i].indices }
                         .filter { it !in flashed }
                         .forEach { currentOctopuses[it] += 1 }

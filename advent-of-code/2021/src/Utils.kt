@@ -13,6 +13,14 @@ fun <T> mapBlocks(mapper: (String) -> T): MutableList<List<T>> =
         .map { it.lineSequence().map(mapper).toList() }
         .toMutableList()
 
+fun <T> withBlocks(transformer: (List<String>) -> T): MutableList<T> =
+    inputBufferedReader()
+        .readText()
+        .trim('\n')
+        .splitToSequence("\n\n")
+        .map { transformer(it.lines()) }
+        .toMutableList()
+
 fun String.toInts(vararg delimiters: String = arrayOf(" ", ",")): List<Int> =
     splitToSequence(*delimiters).filter { it.isNotEmpty() }.map { it.toInt() }.toList()
 
@@ -34,5 +42,14 @@ operator fun <T> List<MutableList<T>>.set(index: Pair<Int, Int>, value: T) {
 }
 
 fun <T> List<T>.toPair() = component1() to component2()
+
+infix fun <F, S> List<F>.cartesian(second: List<S>): Sequence<Pair<F, S>> =
+    asSequence().flatMap { f -> second.asSequence().map { s -> f to s } }
+
+infix fun <F, S> Sequence<F>.cartesian(other: Sequence<S>): Sequence<Pair<F, S>> =
+    flatMap { f -> other.map { s -> f to s } }
+
+infix fun IntRange.cartesian(other: IntRange): Sequence<Pair<Int, Int>> =
+    asSequence().flatMap { f -> other.asSequence().map { s -> f to s } }
 
 typealias Point = Pair<Int, Int>
