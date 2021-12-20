@@ -1,10 +1,8 @@
 private operator fun Int.get(bit: Int) = shr(bit) and 1 == 1
 
-private fun Boolean.toLong() = if (this) 1L else 0L
+private fun Boolean.toLong() = toInt().toLong()
 
 private fun List<Boolean>.toLong() = fold(0L) { acc, i -> (acc shl 1) or i.toLong() }
-
-private fun List<Boolean>.toInt() = fold(0) { acc, i -> (acc shl 1) or i.toLong().toInt() }
 
 private fun <T> MutableList<T>.steal(n: Int) = take(n).also { repeat(n) { removeFirst() } }
 

@@ -53,3 +53,9 @@ infix fun IntRange.cartesian(other: IntRange): Sequence<Pair<Int, Int>> =
     asSequence().flatMap { f -> other.asSequence().map { s -> f to s } }
 
 typealias Point = Pair<Int, Int>
+
+// Bit vector utilities
+
+fun Boolean.toInt() = if (this) 1 else 0
+
+fun List<Boolean>.toInt() = fold(0) { acc, i -> (acc shl 1) or i.toInt() }
