@@ -52,6 +52,15 @@ infix fun <F, S> Sequence<F>.cartesian(other: Sequence<S>): Sequence<Pair<F, S>>
 infix fun IntRange.cartesian(other: IntRange): Sequence<Pair<Int, Int>> =
     asSequence().flatMap { f -> other.asSequence().map { s -> f to s } }
 
+fun cartesian(intRange: IntRange, vararg rest: IntRange): Sequence<List<Int>> =
+    when (val first = rest.firstOrNull()) {
+        null -> intRange.asSequence().map { listOf(it) }
+        else -> {
+            val newRest = rest.drop(1).toTypedArray()
+            intRange.asSequence().flatMap { ir -> cartesian(first, *newRest).map { listOf(ir) + it } }
+        }
+    }
+
 typealias Point = Pair<Int, Int>
 
 // Bit vector utilities
