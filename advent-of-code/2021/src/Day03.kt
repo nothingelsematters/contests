@@ -32,7 +32,7 @@ private fun part2(numbers: List<String>): Int {
 }
 
 fun main() {
-    val lines = mapLines { it }
+    val lines = lines()
     println(part1(lines))
     println(part2(lines))
 }

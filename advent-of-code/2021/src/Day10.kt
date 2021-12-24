@@ -51,7 +51,7 @@ private fun part2(lines: List<String>) = lines
     .let { it[it.size / 2] }
 
 fun main() {
-    val lines = mapLines { it }
+    val lines = lines()
     println(part1(lines))
     println(part2(lines))
 }

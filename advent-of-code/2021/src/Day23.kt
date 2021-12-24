@@ -1,11 +1,8 @@
 
-import kotlin.math.pow
 
 private infix fun Int.rangeTo(to: Int) = if (this >= to) to..this else this..to
 
 private operator fun <T> List<T>.get(intRange: IntRange) = subList(intRange.first, intRange.last + 1)
-
-private fun Int.pow(other: Int) = toDouble().pow(other).toInt()
 
 private fun getRoomExit(roomNumber: Int) = (roomNumber + 1) * 2
 
@@ -106,7 +103,7 @@ private fun part2(rooms: List<List<Int>>): Int {
 }
 
 fun main() {
-    val rooms = mapLines { it }
+    val rooms = lines()
         .asSequence()
         .drop(2)
         .take(2)

@@ -1,9 +1,13 @@
+import kotlin.math.pow
+
 // Input reading utilities
 
 private fun inputBufferedReader() = System.`in`.bufferedReader()
 
 fun <T> mapLines(mapper: (String) -> T): MutableList<T> =
     inputBufferedReader().useLines { lines -> lines.map(mapper).toMutableList() }
+
+fun lines() = mapLines { it }
 
 fun <T> mapBlocks(mapper: (String) -> T): MutableList<List<T>> =
     inputBufferedReader()
@@ -53,11 +57,14 @@ infix fun IntRange.cartesian(other: IntRange): Sequence<Pair<Int, Int>> =
     asSequence().flatMap { f -> other.asSequence().map { s -> f to s } }
 
 fun cartesian(intRange: IntRange, vararg rest: IntRange): Sequence<List<Int>> =
-    when (val first = rest.firstOrNull()) {
-        null -> intRange.asSequence().map { listOf(it) }
+   cartesian(intRange.asSequence(), *rest.map { it.asSequence() }.toTypedArray())
+
+fun <T> cartesian(first: Sequence<T>, vararg rest: Sequence<T>): Sequence<List<T>> =
+    when (val second = rest.firstOrNull()) {
+        null -> first.map { listOf(it) }
         else -> {
             val newRest = rest.drop(1).toTypedArray()
-            intRange.asSequence().flatMap { ir -> cartesian(first, *newRest).map { listOf(ir) + it } }
+            first.flatMap { ir -> cartesian(second, *newRest).map { listOf(ir) + it } }
         }
     }
 
@@ -68,3 +75,7 @@ typealias Point = Pair<Int, Int>
 fun Boolean.toInt() = if (this) 1 else 0
 
 fun List<Boolean>.toInt() = fold(0) { acc, i -> (acc shl 1) or i.toInt() }
+
+fun Int.pow(other: Int) = toDouble().pow(other).toInt()
+
+fun Long.pow(other: Int) = toDouble().pow(other).toLong()
