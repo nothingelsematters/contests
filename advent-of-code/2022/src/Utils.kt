@@ -18,7 +18,9 @@ fun String.toInts(vararg delimiters: String = arrayOf(" ", ",")): List<Int> =
 
 // Other useful
 
-fun <T> T?.expect(): T = this ?: error("Invalid input / Unreachable")
+fun <T> T?.unwrap(): T = this ?: expect()
+
+fun expect(): Nothing = error("Invalid input / Unreachable")
 
 fun <T> List<T>.toPair() = component1() to component2()
 

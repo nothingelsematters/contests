@@ -17,7 +17,7 @@ private enum class Game(val stringRepresentation: String, val shapeScore: Int) {
 }
 
 fun main() {
-    val matches = mapLines { line -> line.split(' ').map { Game.fromString(it).expect() }.toPair() }
+    val matches = mapLines { line -> line.split(' ').map { Game.fromString(it).unwrap() }.toPair() }
 
     val first = matches.sumOf { (l, r) -> r.shapeScore + (r fight l) }
 
