@@ -16,11 +16,13 @@ fun <T> withBlocks(transformer: (List<String>) -> T): MutableList<T> =
 fun String.toInts(vararg delimiters: String = arrayOf(" ", ",")): List<Int> =
     splitToSequence(*delimiters).filter { it.isNotEmpty() }.map { it.toInt() }.toList()
 
-// Other useful
+// Error handling utilities
 
 fun <T> T?.unwrap(): T = this ?: expect()
 
 fun expect(): Nothing = error("Invalid input / Unreachable")
+
+// Other useful
 
 fun <T> List<T>.toPair() = component1() to component2()
 

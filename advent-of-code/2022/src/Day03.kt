@@ -6,8 +6,8 @@ fun Sequence<List<String>>.sumBackpacksCost(): Int =
             .reduce { a, b -> a intersect b }
             .sumOf {
                 when (it) {
-                    in 'a'..'z' -> it.code - 'a'.code + 1
-                    in 'A'..'Z' -> it.code - 'A'.code + 27
+                    in 'a'..'z' -> it - 'a' + 1
+                    in 'A'..'Z' -> it - 'A' + 27
                     else -> expect()
                 }
             }
