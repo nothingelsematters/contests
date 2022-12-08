@@ -8,9 +8,7 @@ private fun readColumnsAndMoves(): Pair<MutableList<ArrayDeque<Char>>, List<Acti
         if ("[" !in line) break
 
         line.asSequence()
-            .withIndex()
-            .filter { (index, _) -> index % 4 == 1 }
-            .map { (_, i) -> i }
+            .filterIndexed { index, _ -> index % 4 == 1 }
             .withIndex()
             .onEach { (index, _) -> if (columns.getOrNull(index) == null) columns.add(ArrayDeque()) }
             .filter { (_, i) -> !i.isWhitespace() }

@@ -9,3 +9,4 @@ Recommended to use [aoc-cli](https://github.com/scarvalhojr/aoc-cli)
 - [[Problem]](https://adventofcode.com/2022/day/5) [[Solution]](src/Day05.kt) Day 5: Supply Stacks
 - [[Problem]](https://adventofcode.com/2022/day/6) [[Solution]](src/Day06.kt) Day 6: Tuning Trouble
 - [[Problem]](https://adventofcode.com/2022/day/7) [[Solution]](src/Day07.kt) Day 7: No Space Left On Device
+- [[Problem]](https://adventofcode.com/2022/day/8) [[Solution]](src/Day08.kt) Day 8: Treetop Tree House
