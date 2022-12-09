@@ -26,7 +26,7 @@ fun <T> T?.unwrap(): T = this ?: expect()
 
 fun expect(): Nothing = error("Invalid input / Unreachable")
 
-// Other useful
+// List utilities
 
 fun <T> List<T>.toPair() = component1() to component2()
 
@@ -34,3 +34,14 @@ operator fun <T> List<T>.get(range: IntRange) = subList(range.first, range.last 
 
 fun <T> List<T>.indexOfFirstOrNull(predicate: (T) -> Boolean): Int? =
     indexOfFirst(predicate).let { if (it == -1) null else it }
+
+// Other useful
+
+data class Point(var x: Int, var y: Int) {
+
+    override fun toString() = "($x, $y)"
+
+    operator fun plus(rhs: Point) = Point(x + rhs.x, y + rhs.y)
+
+    operator fun minus(rhs: Point) = Point(x - rhs.x, y - rhs.y)
+}
