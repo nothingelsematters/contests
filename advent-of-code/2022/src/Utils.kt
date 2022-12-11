@@ -17,8 +17,11 @@ fun <T> mapBlocks(transformer: (List<String>) -> T): MutableList<T> =
 
 // Parsing utilities
 
-fun String.toInts(vararg delimiters: String = arrayOf(" ", ",")): List<Int> =
-    splitToSequence(*delimiters).filter { it.isNotEmpty() }.map { it.toInt() }.toList()
+fun String.toInts(vararg delimiters: String = arrayOf(" ", ",")): MutableList<Int> =
+    splitToSequence(*delimiters).filter { it.isNotEmpty() }.map { it.toInt() }.toMutableList()
+
+fun String.toLongs(vararg delimiters: String = arrayOf(" ", ",")): MutableList<Long> =
+    splitToSequence(*delimiters).filter { it.isNotEmpty() }.map { it.toLong() }.toMutableList()
 
 // Error handling utilities
 
