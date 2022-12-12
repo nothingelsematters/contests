@@ -1,18 +1,13 @@
-@ExperimentalStdlibApi
-fun viewSequence(trees: List<List<Int>>) =
-    trees.indices
-        .asSequence()
-        .flatMap { i -> trees[i].indices.asSequence().map { i to it } }
-        .map { (i, j) ->
-            trees[i][j] to sequenceOf(
-                trees[i][0..<j].asReversed(),
-                trees[i][j + 1..<trees[i].size],
-                trees[0..<i].map { it[j] }.asReversed(),
-                trees[i + 1..<trees.size].map { it[j] },
-            )
-        }
+@OptIn(ExperimentalStdlibApi::class)
+fun viewSequence(trees: List<List<Int>>) = trees.innerIndexedSequence().map { (i, j, value) ->
+    value to sequenceOf(
+        trees[i][0..<j].asReversed(),
+        trees[i][j + 1..<trees[i].size],
+        trees[0..<i].map { it[j] }.asReversed(),
+        trees[i + 1..<trees.size].map { it[j] },
+    )
+}
 
-@ExperimentalStdlibApi
 fun main() {
     val trees = mapLines { line -> line.map { it.toString().toInt() } }
 

@@ -13,3 +13,4 @@ Recommended to use [aoc-cli](https://github.com/scarvalhojr/aoc-cli)
 - [[Problem]](https://adventofcode.com/2022/day/9) [[Solution]](src/Day09.kt) Day 9: Rope Bridge
 - [[Problem]](https://adventofcode.com/2022/day/10) [[Solution]](src/Day10.kt) Day 10: Cathode-Ray Tube
 - [[Problem]](https://adventofcode.com/2022/day/11) [[Solution]](src/Day11.kt) Day 11: Monkey in the Middle
+- [[Problem]](https://adventofcode.com/2022/day/12) [[Solution]](src/Day12.kt) Day 12: Hill Climbing Algorithm
