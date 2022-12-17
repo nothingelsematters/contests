@@ -18,3 +18,4 @@ Recommended to use [aoc-cli](https://github.com/scarvalhojr/aoc-cli)
 - [[Problem]](https://adventofcode.com/2022/day/14) [[Solution]](src/Day14.kt) Day 14: Regolith Reservoir
 - [[Problem]](https://adventofcode.com/2022/day/15) [[Solution]](src/Day15.kt) Day 15: Beacon Exclusion Zone
 - [[Problem]](https://adventofcode.com/2022/day/16) [[Solution]](src/Day16.kt) Day 16: Proboscidea Volcanium
+- [[Problem]](https://adventofcode.com/2022/day/17) [[Solution]](src/Day17.kt) Day 17: Pyroclastic Flow
