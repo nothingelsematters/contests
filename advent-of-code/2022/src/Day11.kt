@@ -31,12 +31,7 @@ fun main() {
         val operation = trimmed[2].removePrefix("Operation: new = old ").let {
             val (operationString, operandString) = it.split(' ')
 
-            val operation: (Long, Long) -> Long = when (operationString) {
-                "+" -> Long::plus
-                "*" -> Long::times
-                else -> expect()
-            }
-
+            val operation = operationString.toOperation()
             when (operandString) {
                 "old" -> { x: Long -> operation(x, x) }
                 else -> { x: Long -> operation(x, operandString.toLong()) }

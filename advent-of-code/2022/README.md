@@ -22,3 +22,4 @@ Recommended to use [aoc-cli](https://github.com/scarvalhojr/aoc-cli)
 - [[Problem]](https://adventofcode.com/2022/day/18) [[Solution]](src/Day18.kt) Day 18: Boiling Boulders
 - [[Problem]](https://adventofcode.com/2022/day/19) [[Solution]](src/Day19.kt) Day 19: Not Enough Minerals
 - [[Problem]](https://adventofcode.com/2022/day/20) [[Solution]](src/Day20.kt) Day 20: Grove Positioning System
+- [[Problem]](https://adventofcode.com/2022/day/21) [[Solution]](src/Day21.kt) Day 21: Monkey Math

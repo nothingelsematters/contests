@@ -20,6 +20,14 @@ fun String.toInts(vararg delimiters: String = arrayOf(" ", ",")): MutableList<In
 fun String.toLongs(vararg delimiters: String = arrayOf(" ", ",")): MutableList<Long> =
     splitToSequence(*delimiters).filter { it.isNotEmpty() }.map { it.toLong() }.toMutableList()
 
+fun String.toOperation(): (Long, Long) -> Long = when (this) {
+    "+" -> Long::plus
+    "-" -> Long::minus
+    "*" -> Long::times
+    "/" -> Long::div
+    else -> expect()
+}
+
 // Error handling utilities
 
 fun <T> T?.unwrap(): T = this ?: expect()
