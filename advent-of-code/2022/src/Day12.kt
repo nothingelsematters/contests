@@ -31,7 +31,6 @@ fun main() {
     var to = Point(0, 0)
 
     val grid = getFullInput()
-        .trim()
         .lineSequence()
         .withIndex()
         .map { (i, line) ->

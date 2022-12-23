@@ -3,7 +3,7 @@ private sealed class FileTree {
     abstract val size: Int
 }
 
-private data class File(override val name: String, override val size: Int): FileTree()
+private data class File(override val name: String, override val size: Int) : FileTree()
 
 private data class Directory(
     override val name: String,
@@ -30,10 +30,9 @@ private data class Directory(
 }
 
 private fun getFileTree(): Directory {
-    val input = getFullInput().trimEnd()
     val root = Directory("/", null)
 
-    input
+    getFullInput()
         .splitToSequence("\n$ ")
         .drop(1)
         .map {
@@ -48,6 +47,7 @@ private fun getFileTree(): Directory {
                         else -> Directory(name, currentDirectory).also(currentDirectory::add)
                     }
                 }
+
                 command.startsWith("ls") -> {
                     output.asSequence()
                         .filter { !it.startsWith("dir") }
@@ -60,6 +60,7 @@ private fun getFileTree(): Directory {
 
                     currentDirectory
                 }
+
                 else -> expect()
             }
         }

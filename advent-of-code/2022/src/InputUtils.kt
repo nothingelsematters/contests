@@ -1,16 +1,12 @@
 private fun inputBufferedReader() = System.`in`.bufferedReader()
 
-fun getFullInput(): String = inputBufferedReader().readText()
+fun getFullInput(): String = inputBufferedReader().readText().trimEnd()
 
 fun <T> mapLines(mapper: (String) -> T): MutableList<T> =
     inputBufferedReader().useLines { lines -> lines.map(mapper).toMutableList() }
 
 fun <T> mapBlocks(mapper: (List<String>) -> T): MutableList<T> =
-    getFullInput()
-        .trim('\n')
-        .splitToSequence("\n\n")
-        .map { mapper(it.lines()) }
-        .toMutableList()
+    getFullInput().splitToSequence("\n\n").map { mapper(it.lines()) }.toMutableList()
 
 // Parsing utilities
 
