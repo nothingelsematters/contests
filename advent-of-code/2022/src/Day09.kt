@@ -8,16 +8,17 @@ private data class State(var rope: List<Point>, val visited: MutableSet<Point> =
 private fun ropeSimulation(headRoute: List<Pair<String, Int>>, ropeLength: Int) =
     headRoute.asSequence()
         .flatMap { (direction, steps) -> List(steps) { direction } }
-        .fold(State(ropeLength)) { state, direction ->
+        .fold(State(ropeLength)) { state, directionString ->
             val (rope, visited) = state
             rope.first().run {
-                when (direction) {
-                    "U" -> y += 1
-                    "D" -> y -= 1
-                    "L" -> x -= 1
-                    "R" -> x += 1
+                val direction = when (directionString) {
+                    "U" -> Direction.Up
+                    "D" -> Direction.Down
+                    "L" -> Direction.Left
+                    "R" -> Direction.Right
                     else -> expect()
                 }
+                this += direction.point
             }
 
             rope.asSequence().windowed(2).forEach { (currentHead, currentTail) ->
@@ -25,7 +26,6 @@ private fun ropeSimulation(headRoute: List<Pair<String, Int>>, ropeLength: Int) 
                 if (distance.x.absoluteValue >= 2 || distance.y.absoluteValue >= 2) {
                     currentTail.x += distance.x.sign
                     currentTail.y += distance.y.sign
-
                 }
             }
 

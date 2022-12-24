@@ -21,11 +21,11 @@ private fun simulateTetris(pushes: List<Int>, tiles: Long): Long {
     val cycle = 10
 
     while (true) {
-        var rock = rocks[rockIndex++ % rocks.size] + Point(2, heights.last() + 4)
+        var rock = rocks.getModulo(rockIndex++) + Point(2, heights.last() + 4)
         repeat(rock.points.maxOf { it.y } - grid[0].size + 1) { grid.forEach { it += false } }
 
         while (true) {
-            val tryToPush = rock + Point(pushes[pushIndex++ % pushes.size], 0)
+            val tryToPush = rock + Point(pushes.getModulo(pushIndex++), 0)
             if (tryToPush.points.all { it.x in grid.indices && !grid[it] }) rock = tryToPush
 
             val tryToFall = rock + Point(0, -1)
@@ -53,9 +53,8 @@ private fun simulateTetris(pushes: List<Int>, tiles: Long): Long {
     return tiles / period * (heights[period * 2] - heights[period]) + heights[(tiles % period).toInt()] + 1
 }
 
-
 fun main() {
-    val pushes = readln().map { if(it == '<') -1 else 1 }
+    val pushes = readln().map { if (it == '<') -1 else 1 }
     println(simulateTetris(pushes, 2022))
     println(simulateTetris(pushes, 1_000_000_000_000))
 }

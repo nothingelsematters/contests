@@ -1,8 +1,8 @@
 private val moves = listOf(
-    Point(-1, 0) to (-1..1).map { Point(-1, it) },
-    Point(1, 0) to (-1..1).map { Point(1, it) },
-    Point(0, -1) to (-1..1).map { Point(it, -1) },
-    Point(0, 1) to (-1..1).map { Point(it, 1) },
+    Direction.Left to (-1..1).map { Point(-1, it) },
+    Direction.Right to (-1..1).map { Point(1, it) },
+    Direction.Down to (-1..1).map { Point(it, -1) },
+    Direction.Up to (-1..1).map { Point(it, 1) },
 )
 
 @OptIn(ExperimentalStdlibApi::class)
@@ -15,7 +15,7 @@ private fun wander(tiles: MutableSet<Point>, moveIndex: Int) {
             moves[moveIndex..<moves.size].asSequence()
                 .plus(moves[0..<moveIndex].asSequence())
                 .find { (_, scope) -> scope.none { point + it in tiles } }
-                ?.let { point + it.first to point }
+                ?.let { point + it.first.point to point }
         }
         .groupBy({ it.first }) { it.second }
         .asSequence()

@@ -19,3 +19,18 @@ fun <T> List<List<T>>.getOrNull(point: Point): T? = this.getOrNull(point.x)?.get
 operator fun <T> List<MutableList<T>>.set(point: Point, t: T) {
     this[point.x][point.y] = t
 }
+
+infix fun Long.within(size: Int): Int {
+    var index = this
+    if (index < 0) {
+        index += size * (-index / size + 1)
+    }
+    return (index % size).toInt()
+}
+
+/**
+ * Mapping of every Int into [0..<size] to use it as an index.
+ */
+infix fun Int.within(size: Int): Int = toLong() within size
+
+fun <T> List<T>.getModulo(index: Int) = get(index within size)

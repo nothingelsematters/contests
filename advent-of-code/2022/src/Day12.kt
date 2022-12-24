@@ -16,8 +16,9 @@ private fun dijkstra(grid: List<List<Int>>, from: Point): List<List<Int>> {
 
         used[v] = true
 
-        sequenceOf(Point(1, 0), Point(-1, 0), Point(0, 1), Point(0, -1))
-            .map { it + v }
+        Direction.values()
+            .asSequence()
+            .map { it.point + v }
             .filter { it.x in grid.indices && it.y in grid.first().indices }
             .filter { grid[it] - grid[v] >= -1 }
             .forEach { distances[it] = min(distances[it], distances[v] + 1) }
