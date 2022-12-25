@@ -17,7 +17,7 @@ private fun readColumnsAndMoves(): Pair<MutableList<ArrayDeque<Char>>, List<Acti
 
     readln()
 
-    val moves = mapLines {  action ->
+    val moves = mapLines { action ->
         val (move, from, to) = """move (\d+) from (\d+) to (\d+)""".toRegex()
             .matchEntire(action)
             .unwrap()

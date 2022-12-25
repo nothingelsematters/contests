@@ -82,9 +82,9 @@ private fun mine(
 
     val best = blueprint.indices
         .asSequence()
-        .mapNotNull { index -> miningState.reserveRobot(blueprint, index)?.let { index to it  } }
+        .mapNotNull { index -> miningState.reserveRobot(blueprint, index)?.let { index to it } }
         .plus(null to miningState)
-        .onEach {  (index, newMiningState) ->
+        .onEach { (index, newMiningState) ->
             newMiningState.mine()
             index?.let { newMiningState.craftRobot(it) }
         }
@@ -97,7 +97,7 @@ private fun mine(
 }
 
 suspend fun main() {
-    val blueprints = mapLines {  line ->
+    val blueprints = mapLines { line ->
         val (oreOre, clayOre, obsidianOre, obsidianClay, geodeOre, geodeObsidian) =
             ("""Blueprint \d+: Each ore robot costs (\d)+ ore. """ +
                 """Each clay robot costs (\d+) ore. """ +
@@ -116,7 +116,6 @@ suspend fun main() {
             intArrayOf(geodeOre, 0, geodeObsidian),
         )
     }
-
 
     val first = coroutineScope {
         blueprints

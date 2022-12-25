@@ -23,6 +23,7 @@ private fun tryToMove(
             if (result) return false
             repeat(skipped) { leftVerticalLines.addLast(rightVerticalLines.removeFirst()) }
         }
+
         -1 -> {
             val (skipped, result) = leftVerticalLines.asReversed().dropTakeCountAny { it > attempt.x }
             if (result) return false
@@ -41,12 +42,12 @@ private val START = Point(500, 0)
 private fun sandAvalanche(lines: List<Pair<Point, Point>>): Int {
     val horizontalLines = lines.asSequence()
         .filter { (a, b) -> a.y == b.y }
-        .map { (a, b) -> a.y to minOf(a.x, b.x)..maxOf(a.x, b.x)  }
+        .map { (a, b) -> a.y to minOf(a.x, b.x)..maxOf(a.x, b.x) }
         .toMutableList()
 
     val verticalLines = lines.asSequence()
         .filter { (a, b) -> a.x == b.x }
-        .map { (a, b) -> a.x to minOf(a.y, b.y)..maxOf(a.y, b.y)  }
+        .map { (a, b) -> a.x to minOf(a.y, b.y)..maxOf(a.y, b.y) }
         .toMutableList()
 
     var count = 0

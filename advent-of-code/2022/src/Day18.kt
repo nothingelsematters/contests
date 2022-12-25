@@ -4,7 +4,8 @@ private fun part1(cubes: List<List<Int>>): Int =
     cubes.size * 6 - 2 * cubes.asSequence().withIndex().sumOf { (index, i) ->
         cubes.subList(index + 1, cubes.size).count { j ->
             i.asSequence().zip(j.asSequence()).count { (a, b) -> a == b } == 2
-                && i.asSequence().zip(j.asSequence()).filter { (a, b) -> a != b}.first().let { (a, b) -> abs(a - b) == 1 }
+                && i.asSequence().zip(j.asSequence()).filter { (a, b) -> a != b }.first()
+                .let { (a, b) -> abs(a - b) == 1 }
         }
     }
 

@@ -5,6 +5,7 @@ private sealed class ListOrInt : Comparable<ListOrInt> {
             is WrappedInt -> value compareTo other.value
             is WrappedList -> WrappedList(this) compareTo other
         }
+
         is WrappedList -> when (other) {
             is WrappedInt -> -(other compareTo this)
             is WrappedList -> list.asSequence()
@@ -39,7 +40,7 @@ private sealed class ListOrInt : Comparable<ListOrInt> {
     }
 }
 
-private data class WrappedList(val list: List<ListOrInt>): ListOrInt() {
+private data class WrappedList(val list: List<ListOrInt>) : ListOrInt() {
     constructor(vararg listOrInt: ListOrInt) : this(listOrInt.toList())
 }
 

@@ -26,3 +26,4 @@ Recommended to use [aoc-cli](https://github.com/scarvalhojr/aoc-cli)
 - [[Problem]](https://adventofcode.com/2022/day/22) [[Solution]](src/Day22.kt) Day 22: Monkey Map
 - [[Problem]](https://adventofcode.com/2022/day/23) [[Solution]](src/Day23.kt) Day 23: Unstable Diffusion
 - [[Problem]](https://adventofcode.com/2022/day/24) [[Solution]](src/Day24.kt) Day 24: Blizzard Basin
+- [[Problem]](https://adventofcode.com/2022/day/25) [[Solution]](src/Day25.kt) Day 25: Full of Hot Air
