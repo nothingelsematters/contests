@@ -24,15 +24,15 @@ pub fn length_of_longest_substring(s: String) -> i32 {
 
 #[cfg(test)]
 mod test {
-    use super::*;
+    use super::length_of_longest_substring;
 
     #[test]
-    fn test() {
+    fn sample_1() {
         assert_eq!(length_of_longest_substring(String::from("abcabcbb")), 3)
     }
 
     #[test]
-    fn abba() {
+    fn sample_2() {
         assert_eq!(length_of_longest_substring(String::from("abba")), 2)
     }
 }

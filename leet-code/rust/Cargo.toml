@@ -2,4 +2,4 @@
 name = "leet-code"
 version = "0.1.0"
 authors = ["Simon <Simon Naumov>"]
-edition = "2018"
+edition = "2021"

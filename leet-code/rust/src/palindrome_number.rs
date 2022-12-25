@@ -12,10 +12,8 @@ pub fn is_palindrome(x: i32) -> bool {
 
 #[cfg(test)]
 mod test {
-    use super::*;
-
     #[test]
-    fn test() {
-        assert_eq!(is_palindrome(121), true)
+    fn sample() {
+        assert!(super::is_palindrome(121))
     }
 }

@@ -38,30 +38,30 @@ pub fn find(a: &[i32], b: &[i32], middle: usize) -> f64 {
 
 #[cfg(test)]
 mod test {
-    use super::*;
+    use super::find_median_sorted_arrays;
 
     #[test]
-    fn example_1() {
+    fn sample_1() {
         assert_eq!(find_median_sorted_arrays(vec![1, 3], vec![2]), 2.0)
     }
 
     #[test]
-    fn example_2() {
+    fn sample_2() {
         assert_eq!(find_median_sorted_arrays(vec![1, 2], vec![3, 4]), 2.5)
     }
 
     #[test]
-    fn example_3() {
+    fn sample_3() {
         assert_eq!(find_median_sorted_arrays(vec![0, 0], vec![0, 0]), 0.0)
     }
 
     #[test]
-    fn example_4() {
+    fn sample_4() {
         assert_eq!(find_median_sorted_arrays(vec![], vec![1]), 1.0)
     }
 
     #[test]
-    fn example_5() {
+    fn sample_5() {
         assert_eq!(find_median_sorted_arrays(vec![2], vec![]), 2.0)
     }
 }

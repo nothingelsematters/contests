@@ -28,8 +28,8 @@ pub fn add_two_numbers_with_remainder(
     let node = ListNode {
         val: sum % 10,
         next: add_two_numbers_with_remainder(
-            l1.map(|x| x.next).flatten(),
-            l2.map(|x| x.next).flatten(),
+            l1.and_then(|x| x.next),
+            l2.and_then(|x| x.next),
             sum / 10,
         ),
     };
@@ -64,7 +64,7 @@ mod test {
     }
 
     #[test]
-    fn test() {
+    fn sample() {
         assert_eq!(
             add_two_numbers(list![3, 4, 2], list![4, 6, 5]),
             list![8, 0, 7],
