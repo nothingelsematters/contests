@@ -2,7 +2,7 @@
 
 [Rust]: https://img.shields.io/badge/Rust-grey?style=flat-square&logo=Rust&logoColor=crimson
 [Kotlin]: https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin
-[Go]: https://img.shields.io/badge/C%2B%2B-grey?style=flat-square&logo=Go
+[Go]: https://img.shields.io/badge/Go-grey?style=flat-square&logo=Go
 
 - advents of code :christmas\_tree:
   - unrecorded:
@@ -18,7 +18,7 @@
     [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-grey?style=flat-square&logo=PostgreSQL)](advent-of-code/2020/Day10.sql)
     [![Scala](https://img.shields.io/badge/Scala-grey?style=flat-square&logo=Scala)](advent-of-code/2020/Day11.scala)
     [![Swift](https://img.shields.io/badge/Swift-grey?style=flat-square&logo=Swift)](advent-of-code/2020/Day12.swift)
-    [![Go](https://img.shields.io/badge/Go-grey?style=flat-square&logo=Go)](advent-of-code/2020/Day13.go)
+    [![Go]](advent-of-code/2020/Day13.go)
     [![Julia](https://img.shields.io/badge/Julia-grey?style=flat-square&logo=Julia)](advent-of-code/2020/Day15.jl)
     [![TypeScript](https://img.shields.io/badge/TypeScript-grey?style=flat-square&logo=TypeScript)](advent-of-code/2020/Day17.ts)
     [![Ruby](https://img.shields.io/badge/Ruby-grey?style=flat-square&logo=Ruby)](advent-of-code/2020/Day19.rb)
@@ -31,7 +31,7 @@
 
 - [leet code](leet-code) \
   ![LeetCode](https://img.shields.io/badge/dynamic/json?style=flat-square&labelColor=black&color=%23ffa116&label=solved&query=solved&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fnothingelsematters&logo=leetcode&logoColor=yellow)
-  ![Rust] ![Kotlin]
+  ![Rust] ![Kotlin] ![Go]
 
 - [code wars](codewars) \
   ![CodeWars](https://img.shields.io/badge/dynamic/json?style=flat-square&labelColor=black&color=%23ffa116&label=honor&query=honor&url=https%3A%2F%2Fcodewars.com%2Fapi%2Fv1%2Fusers%2Fnothingelsematters&logo=codewars&logoColor=red)

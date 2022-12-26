@@ -4,7 +4,7 @@
 
 [Rust]: https://img.shields.io/badge/Rust-grey?style=flat-square&logo=Rust&logoColor=crimson
 [Kotlin]: https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin
-[Go]: https://img.shields.io/badge/C%2B%2B-grey?style=flat-square&logo=Go
+[Go]: https://img.shields.io/badge/Go-grey?style=flat-square&logo=Go
 
 - [[Problem]](https://leetcode.com/problems/two-sum/)
   [[Solution]](rust/src/two_sum.rs)
@@ -30,3 +30,6 @@
 - [[Problem]](https://leetcode.com/problems/longest-subsequence-with-limited-sum/)
   [[Solution]](rust/src/longest_subsequence_with_limited_sum.rs)
   ![Rust] 2389. Longest Subsequence With Limited Sum
+- [[Problem]](https://leetcode.com/problems/jump-game/)
+  [[Solution]](go/jump_game.go)
+  ![Go] 55. Jump Game
