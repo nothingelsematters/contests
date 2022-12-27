@@ -33,3 +33,6 @@
 - [[Problem]](https://leetcode.com/problems/jump-game/)
   [[Solution]](go/jump_game.go)
   ![Go] 55. Jump Game
+- [[Problem]](https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/)
+  [[Solution]](go/maximum_bags_with_full_capacity_of_rocks.go)
+  ![Go] 2279. Maximum Bags With Full Capacity of Rocks
