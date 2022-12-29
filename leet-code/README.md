@@ -39,3 +39,6 @@
 - [[Problem]](https://leetcode.com/problems/remove-stones-to-minimize-the-total/)
   [[Solution]](rust/src/remove_stones_to_minimize_the_total.rs)
   ![Rust] 1962. Remove Stones to Minimize the Total
+- [[Problem]](https://leetcode.com/problems/single-threaded-cpu/)
+  [[Solution]](rust/src/single_threaded_cpu.rs)
+  ![Rust] 1834. Single-Threaded CPU
