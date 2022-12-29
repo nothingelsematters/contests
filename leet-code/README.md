@@ -36,3 +36,6 @@
 - [[Problem]](https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/)
   [[Solution]](go/maximum_bags_with_full_capacity_of_rocks.go)
   ![Go] 2279. Maximum Bags With Full Capacity of Rocks
+- [[Problem]](https://leetcode.com/problems/remove-stones-to-minimize-the-total/)
+  [[Solution]](rust/src/remove_stones_to_minimize_the_total.rs)
+  ![Rust] 1962. Remove Stones to Minimize the Total
