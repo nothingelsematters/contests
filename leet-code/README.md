@@ -42,3 +42,6 @@
 - [[Problem]](https://leetcode.com/problems/single-threaded-cpu/)
   [[Solution]](rust/src/single_threaded_cpu.rs)
   ![Rust] 1834. Single-Threaded CPU
+- [[Problem]](https://leetcode.com/problems/all-paths-from-source-to-target/)
+  [[Solution]](go/all_paths_from_source_to_target.go)
+  ![Go] 797. All Paths From Source to Target
