@@ -45,3 +45,6 @@
 - [[Problem]](https://leetcode.com/problems/all-paths-from-source-to-target/)
   [[Solution]](go/all_paths_from_source_to_target.go)
   ![Go] 797. All Paths From Source to Target
+- [[Problem]](https://leetcode.com/problems/unique-paths-iii/)
+  [[Solution]](go/unique_paths_three.go)
+  ![Go] 980. Unique Paths III
