@@ -48,3 +48,6 @@
 - [[Problem]](https://leetcode.com/problems/unique-paths-iii/)
   [[Solution]](go/unique_paths_three.go)
   ![Go] 980. Unique Paths III
+- [[Problem]](https://leetcode.com/problems/word-pattern/)
+  [[Solution]](go/word_pattern.go)
+  ![Go] 290. Word Pattern
