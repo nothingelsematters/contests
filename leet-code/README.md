@@ -51,3 +51,6 @@
 - [[Problem]](https://leetcode.com/problems/word-pattern/)
   [[Solution]](go/word_pattern.go)
   ![Go] 290. Word Pattern
+- [[Problem]](https://leetcode.com/problems/detect-capital/)
+  [[Solution]](go/detect_capital.go)
+  ![Go] 520. Detect Capital
