@@ -54,3 +54,6 @@
 - [[Problem]](https://leetcode.com/problems/detect-capital/)
   [[Solution]](go/detect_capital.go)
   ![Go] 520. Detect Capital
+- [[Problem]](https://leetcode.com/problems/delete-columns-to-make-sorted/)
+  [[Solution]](go/delete_columns_to_make_sorted.go)
+  ![Go] 944. Delete Columns to Make Sorted
