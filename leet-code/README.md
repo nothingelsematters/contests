@@ -57,3 +57,6 @@
 - [[Problem]](https://leetcode.com/problems/delete-columns-to-make-sorted/)
   [[Solution]](go/delete_columns_to_make_sorted.go)
   ![Go] 944. Delete Columns to Make Sorted
+- [[Problem]](https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/)
+  [[Solution]](go/minimum_rounds_to_complete_all_tasks.go)
+  ![Go] 2244. Minimum Rounds to Complete All Tasks
