@@ -60,3 +60,6 @@
 - [[Problem]](https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/)
   [[Solution]](go/minimum_rounds_to_complete_all_tasks.go)
   ![Go] 2244. Minimum Rounds to Complete All Tasks
+- [[Problem]](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)
+  [[Solution]](go/minimum_number_of_arrows_to_burst_balloons.go)
+  ![Go] 452. Minimum Number of Arrows to Burst Balloons
