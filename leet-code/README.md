@@ -63,3 +63,6 @@
 - [[Problem]](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)
   [[Solution]](go/minimum_number_of_arrows_to_burst_balloons.go)
   ![Go] 452. Minimum Number of Arrows to Burst Balloons
+- [[Problem]](https://leetcode.com/problems/maximum-ice-cream-bars/)
+  [[Solution]](go/maximum_ice_cream_bars.go)
+  ![Go] 1833. Maximum Ice Cream Bars
