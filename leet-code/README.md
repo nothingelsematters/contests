@@ -69,3 +69,6 @@
 - [[Problem]](https://leetcode.com/problems/gas-station/)
   [[Solution]](go/gas_station.go)
   ![Go] 134. Gas Station
+- [[Problem]](https://leetcode.com/problems/max-points-on-a-line/)
+  [[Solution]](go/max_points_on_a_line.go)
+  ![Go] 149. Max Points on a Line
