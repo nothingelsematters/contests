@@ -72,3 +72,6 @@
 - [[Problem]](https://leetcode.com/problems/max-points-on-a-line/)
   [[Solution]](go/max_points_on_a_line.go)
   ![Go] 149. Max Points on a Line
+- [[Problem]](https://leetcode.com/problems/binary-tree-preorder-traversal/)
+  [[Solution]](go/binary_tree_preorder_traversal.go)
+  ![Go] 144. Binary Tree Preorder Traversal
