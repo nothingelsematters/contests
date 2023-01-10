@@ -75,3 +75,6 @@
 - [[Problem]](https://leetcode.com/problems/binary-tree-preorder-traversal/)
   [[Solution]](go/binary_tree_preorder_traversal.go)
   ![Go] 144. Binary Tree Preorder Traversal
+- [[Problem]](https://leetcode.com/problems/same-tree/)
+  [[Solution]](go/same_tree.go)
+  ![Go] 100. Same Tree
