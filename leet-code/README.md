@@ -78,3 +78,6 @@
 - [[Problem]](https://leetcode.com/problems/same-tree/)
   [[Solution]](go/same_tree.go)
   ![Go] 100. Same Tree
+- [[Problem]](https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree/)
+  [[Solution]](go/minimum_time_to_collect_all_apples_in_a_tree.go)
+  ![Go] 1443. Minimum Time to Collect All Apples in a Tree
