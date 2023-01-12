@@ -81,3 +81,6 @@
 - [[Problem]](https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree/)
   [[Solution]](go/minimum_time_to_collect_all_apples_in_a_tree.go)
   ![Go] 1443. Minimum Time to Collect All Apples in a Tree
+- [[Problem]](https://leetcode.com/problems/number-of-nodes-in-the-sub-tree-with-the-same-label/)
+  [[Solution]](go/number_of_nodes_in_the_sub_tree_with_the_same_label.go)
+  ![Go] 1519. Number of Nodes in the Sub-Tree With the Same Label
