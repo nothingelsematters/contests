@@ -84,3 +84,6 @@
 - [[Problem]](https://leetcode.com/problems/number-of-nodes-in-the-sub-tree-with-the-same-label/)
   [[Solution]](go/number_of_nodes_in_the_sub_tree_with_the_same_label.go)
   ![Go] 1519. Number of Nodes in the Sub-Tree With the Same Label
+- [[Problem]](https://leetcode.com/problems/longest-path-with-different-adjacent-characters/)
+  [[Solution]](go/longest_path_with_different_adjacent_characters.go)
+  ![Go] 2246. Longest Path With Different Adjacent Characters
