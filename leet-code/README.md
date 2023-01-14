@@ -87,3 +87,6 @@
 - [[Problem]](https://leetcode.com/problems/longest-path-with-different-adjacent-characters/)
   [[Solution]](go/longest_path_with_different_adjacent_characters.go)
   ![Go] 2246. Longest Path With Different Adjacent Characters
+- [[Problem]](https://leetcode.com/problems/lexicographically-smallest-equivalent-string/)
+  [[Solution]](go/lexicographically_smallest_equivalent_string.go)
+  ![Go] 1061. Lexicographically Smallest Equivalent String
