@@ -90,3 +90,6 @@
 - [[Problem]](https://leetcode.com/problems/lexicographically-smallest-equivalent-string/)
   [[Solution]](go/lexicographically_smallest_equivalent_string.go)
   ![Go] 1061. Lexicographically Smallest Equivalent String
+- [[Problem]](https://leetcode.com/problems/number-of-good-paths/)
+  [[Solution]](go/number_of_good_paths.go)
+  ![Go] 2421. Number of Good Paths
