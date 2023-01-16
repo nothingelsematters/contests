@@ -1,4 +1,5 @@
 pub mod add_two_numbers;
+pub mod insert_interval;
 pub mod longest_subsequence_with_limited_sum;
 pub mod longest_substring_without_repeating_characters;
 pub mod median_of_two_sorted_arrays;

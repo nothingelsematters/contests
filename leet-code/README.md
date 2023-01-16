@@ -93,3 +93,6 @@
 - [[Problem]](https://leetcode.com/problems/number-of-good-paths/)
   [[Solution]](go/number_of_good_paths.go)
   ![Go] 2421. Number of Good Paths
+- [[Problem]](https://leetcode.com/problems/insert-interval/)
+  [[Solution]](rust/src/insert_interval.rs)
+  ![Rust] 57. Insert Interval
