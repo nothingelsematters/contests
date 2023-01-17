@@ -96,3 +96,6 @@
 - [[Problem]](https://leetcode.com/problems/insert-interval/)
   [[Solution]](rust/src/insert_interval.rs)
   ![Rust] 57. Insert Interval
+- [[Problem]](https://leetcode.com/problems/flip-string-to-monotone-increasing/)
+  [[Solution]](rust/src/flip_string_to_monotone_increasing.rs)
+  ![Rust] 926. Flip String to Monotone Increasing
