@@ -99,3 +99,6 @@
 - [[Problem]](https://leetcode.com/problems/flip-string-to-monotone-increasing/)
   [[Solution]](rust/src/flip_string_to_monotone_increasing.rs)
   ![Rust] 926. Flip String to Monotone Increasing
+- [[Problem]](https://leetcode.com/problems/maximum-sum-circular-subarray/)
+  [[Solution]](rust/src/maximum_sum_circular_subarray.rs)
+  ![Rust] 918. Maximum Sum Circular Subarray
