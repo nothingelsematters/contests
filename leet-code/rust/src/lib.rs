@@ -8,5 +8,6 @@ pub mod median_of_two_sorted_arrays;
 pub mod palindrome_number;
 pub mod remove_stones_to_minimize_the_total;
 pub mod single_threaded_cpu;
+pub mod subarray_sums_divisible_by_k;
 pub mod two_sum;
 pub mod valid_sudoku;
