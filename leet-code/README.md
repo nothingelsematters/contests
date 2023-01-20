@@ -105,3 +105,6 @@
 - [[Problem]](https://leetcode.com/problems/subarray-sums-divisible-by-k/)
   [[Solution]](rust/src/subarray_sums_divisible_by_k.rs)
   ![Rust] 974. Subarray Sums Divisible by K
+- [[Problem]](https://leetcode.com/problems/non-decreasing-subsequences/)
+  [[Solution]](rust/src/non_decreasing_subsequences.rs)
+  ![Rust] 491. Non-decreasing Subsequences
