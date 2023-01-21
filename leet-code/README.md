@@ -108,3 +108,6 @@
 - [[Problem]](https://leetcode.com/problems/non-decreasing-subsequences/)
   [[Solution]](rust/src/non_decreasing_subsequences.rs)
   ![Rust] 491. Non-decreasing Subsequences
+- [[Problem]](https://leetcode.com/problems/restore-ip-addresses/)
+  [[Solution]](kotlin/restoreIpAddresses.kt)
+  ![Kotlin] 93. Restore IP Addresses
