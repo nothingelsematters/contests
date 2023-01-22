@@ -111,3 +111,6 @@
 - [[Problem]](https://leetcode.com/problems/restore-ip-addresses/)
   [[Solution]](kotlin/restoreIpAddresses.kt)
   ![Kotlin] 93. Restore IP Addresses
+- [[Problem]](https://leetcode.com/problems/palindrome-partitioning/)
+  [[Solution]](rust/src/palindrome_partitioning.rs)
+  ![Rust] 131. Palindrome Partitioning
