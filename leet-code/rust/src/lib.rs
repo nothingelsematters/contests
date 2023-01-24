@@ -11,6 +11,7 @@ pub mod palindrome_number;
 pub mod palindrome_partitioning;
 pub mod remove_stones_to_minimize_the_total;
 pub mod single_threaded_cpu;
+pub mod snakes_and_ladders;
 pub mod subarray_sums_divisible_by_k;
 pub mod two_sum;
 pub mod valid_sudoku;

@@ -114,6 +114,6 @@
 - [[Problem]](https://leetcode.com/problems/palindrome-partitioning/)
   [[Solution]](rust/src/palindrome_partitioning.rs)
   ![Rust] 131. Palindrome Partitioning
-- [[Problem]](https://leetcode.com/problems/find-the-town-judge/)
-  [[Solution]](rust/src/find_the_town_judge.rs)
-  ![Rust] 997. Find the Town Judge
+- [[Problem]](https://leetcode.com/problems/snakes-and-ladders/)
+  [[Solution]](rust/src/snakes_and_ladders.rs)
+  ![Rust] 909. Snakes and Ladders
