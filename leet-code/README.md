@@ -117,3 +117,6 @@
 - [[Problem]](https://leetcode.com/problems/snakes-and-ladders/)
   [[Solution]](rust/src/snakes_and_ladders.rs)
   ![Rust] 909. Snakes and Ladders
+- [[Problem]](https://leetcode.com/problems/find-closest-node-to-given-two-nodes/)
+  [[Solution]](rust/src/find_closest_node_to_given_two_nodes.rs)
+  ![Rust] 2359. Find Closest Node to Given Two Nodes
