@@ -120,3 +120,6 @@
 - [[Problem]](https://leetcode.com/problems/find-closest-node-to-given-two-nodes/)
   [[Solution]](rust/src/find_closest_node_to_given_two_nodes.rs)
   ![Rust] 2359. Find Closest Node to Given Two Nodes
+- [[Problem]](https://leetcode.com/problems/cheapest-flights-within-k-stops/)
+  [[Solution]](rust/src/cheapest_flights_within_k_stops.rs)
+  ![Rust] 787. Cheapest Flights Within K Stops
