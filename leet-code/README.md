@@ -123,3 +123,6 @@
 - [[Problem]](https://leetcode.com/problems/cheapest-flights-within-k-stops/)
   [[Solution]](rust/src/cheapest_flights_within_k_stops.rs)
   ![Rust] 787. Cheapest Flights Within K Stops
+- [[Problem]](https://leetcode.com/problems/concatenated-words/)
+  [[Solution]](kotlin/concatenatedWords.kt)
+  ![Kotlin] 472. Concatenated Words
