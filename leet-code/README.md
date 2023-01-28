@@ -126,3 +126,6 @@
 - [[Problem]](https://leetcode.com/problems/concatenated-words/)
   [[Solution]](kotlin/concatenatedWords.kt)
   ![Kotlin] 472. Concatenated Words
+- [[Problem]](https://leetcode.com/problems/data-stream-as-disjoint-intervals/)
+  [[Solution]](rust/src/data_stream_as_disjoint_intervals.rs)
+  ![Rust] 352. Data Stream as Disjoint Intervals
