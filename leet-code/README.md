@@ -129,3 +129,6 @@
 - [[Problem]](https://leetcode.com/problems/data-stream-as-disjoint-intervals/)
   [[Solution]](rust/src/data_stream_as_disjoint_intervals.rs)
   ![Rust] 352. Data Stream as Disjoint Intervals
+- [[Problem]](https://leetcode.com/problems/lfu-cache/)
+  [[Solution]](kotlin/lfuCache.kt)
+  ![Kotlin] 460. LFU Cache
