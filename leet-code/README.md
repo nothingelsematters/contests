@@ -132,3 +132,6 @@
 - [[Problem]](https://leetcode.com/problems/lfu-cache/)
   [[Solution]](kotlin/lfuCache.kt)
   ![Kotlin] 460. LFU Cache
+- [[Problem]](https://leetcode.com/problems/n-th-tribonacci-number/)
+  [[Solution]](kotlin/nThTribonacciNumber.kt)
+  ![Kotlin] 1137. N-th Tribonacci Number
