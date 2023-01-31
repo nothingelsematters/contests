@@ -135,3 +135,6 @@
 - [[Problem]](https://leetcode.com/problems/n-th-tribonacci-number/)
   [[Solution]](kotlin/nThTribonacciNumber.kt)
   ![Kotlin] 1137. N-th Tribonacci Number
+- [[Problem]](https://leetcode.com/problems/best-team-with-no-conflicts/)
+  [[Solution]](kotlin/bestTeamWithNoConflicts.kt)
+  ![Kotlin] 1626. Best Team With No Conflicts
