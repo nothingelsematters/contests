@@ -138,3 +138,6 @@
 - [[Problem]](https://leetcode.com/problems/best-team-with-no-conflicts/)
   [[Solution]](kotlin/bestTeamWithNoConflicts.kt)
   ![Kotlin] 1626. Best Team With No Conflicts
+- [[Problem]](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
+  [[Solution]](kotlin/greatestCommonDivisorOfStrings.kt)
+  ![Kotlin] 1071. Greatest Common Divisor of Strings
