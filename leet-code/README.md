@@ -141,3 +141,6 @@
 - [[Problem]](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
   [[Solution]](kotlin/greatestCommonDivisorOfStrings.kt)
   ![Kotlin] 1071. Greatest Common Divisor of Strings
+- [[Problem]](https://leetcode.com/problems/verifying-an-alien-dictionary/)
+  [[Solution]](kotlin/verifyingAnAlienDictionary.kt)
+  ![Kotlin] 953. Verifying an Alien Dictionary
