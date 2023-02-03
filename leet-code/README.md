@@ -144,3 +144,6 @@
 - [[Problem]](https://leetcode.com/problems/verifying-an-alien-dictionary/)
   [[Solution]](kotlin/verifyingAnAlienDictionary.kt)
   ![Kotlin] 953. Verifying an Alien Dictionary
+- [[Problem]](https://leetcode.com/problems/zigzag-conversion/)
+  [[Solution]](kotlin/zigzagConversion.kt)
+  ![Kotlin] 6. Zigzag Conversion
