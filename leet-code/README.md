@@ -147,3 +147,6 @@
 - [[Problem]](https://leetcode.com/problems/zigzag-conversion/)
   [[Solution]](kotlin/zigzagConversion.kt)
   ![Kotlin] 6. Zigzag Conversion
+- [[Problem]](https://leetcode.com/problems/permutation-in-string/)
+  [[Solution]](kotlin/permutationInString.kt)
+  ![Kotlin] 567. Permutation in String
