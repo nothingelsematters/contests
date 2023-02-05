@@ -150,3 +150,6 @@
 - [[Problem]](https://leetcode.com/problems/permutation-in-string/)
   [[Solution]](kotlin/permutationInString.kt)
   ![Kotlin] 567. Permutation in String
+- [[Problem]](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
+  [[Solution]](kotlin/findAllAnagramsInAString.kt)
+  ![Kotlin] 438. Find All Anagrams in a String
