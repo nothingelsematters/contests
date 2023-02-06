@@ -153,3 +153,6 @@
 - [[Problem]](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
   [[Solution]](kotlin/findAllAnagramsInAString.kt)
   ![Kotlin] 438. Find All Anagrams in a String
+- [[Problem]](https://leetcode.com/problems/shuffle-the-array/)
+  [[Solution]](kotlin/shuffleTheArray.kt)
+  ![Kotlin] 1470. Shuffle the Array
