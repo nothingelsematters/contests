@@ -156,3 +156,6 @@
 - [[Problem]](https://leetcode.com/problems/shuffle-the-array/)
   [[Solution]](kotlin/shuffleTheArray.kt)
   ![Kotlin] 1470. Shuffle the Array
+- [[Problem]](https://leetcode.com/problems/fruit-into-baskets/)
+  [[Solution]](kotlin/fruitIntoBaskets.kt)
+  ![Kotlin] 904. Fruit Into Baskets
