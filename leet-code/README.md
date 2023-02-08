@@ -159,3 +159,6 @@
 - [[Problem]](https://leetcode.com/problems/fruit-into-baskets/)
   [[Solution]](kotlin/fruitIntoBaskets.kt)
   ![Kotlin] 904. Fruit Into Baskets
+- [[Problem]](https://leetcode.com/problems/jump-game-ii/)
+  [[Solution]](kotlin/jumpGameII.kt)
+  ![Kotlin] 45. Jump Game II
