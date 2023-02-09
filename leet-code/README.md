@@ -162,3 +162,6 @@
 - [[Problem]](https://leetcode.com/problems/jump-game-ii/)
   [[Solution]](kotlin/jumpGameII.kt)
   ![Kotlin] 45. Jump Game II
+- [[Problem]](https://leetcode.com/problems/naming-a-company/)
+  [[Solution]](kotlin/namingACompany.kt)
+  ![Kotlin] 2306. Naming a Company
