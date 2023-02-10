@@ -165,3 +165,6 @@
 - [[Problem]](https://leetcode.com/problems/naming-a-company/)
   [[Solution]](kotlin/namingACompany.kt)
   ![Kotlin] 2306. Naming a Company
+- [[Problem]](https://leetcode.com/problems/as-far-from-land-as-possible/)
+  [[Solution]](kotlin/asFarFromLandAsPossible.kt)
+  ![Kotlin] 1162. As Far from Land as Possible
