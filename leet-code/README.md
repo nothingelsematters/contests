@@ -1,6 +1,7 @@
 # [leet code](https://leetcode.com/problemset/all/) problems
 
 ![solved](https://img.shields.io/badge/dynamic/json?style=flat-square&labelColor=black&color=%23ffa116&label=solved&query=solved&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fnothingelsematters&logo=leetcode&logoColor=yellow)
+![Rust] ![Kotlin] ![Go]
 
 [Rust]: https://img.shields.io/badge/Rust-grey?style=flat-square&logo=Rust&logoColor=crimson
 [Kotlin]: https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin
@@ -168,3 +169,6 @@
 - [[Problem]](https://leetcode.com/problems/as-far-from-land-as-possible/)
   [[Solution]](kotlin/asFarFromLandAsPossible.kt)
   ![Kotlin] 1162. As Far from Land as Possible
+- [[Problem]](https://leetcode.com/problems/shortest-path-with-alternating-colors/)
+  [[Solution]](kotlin/shortestPathWithAlternatingColors.kt)
+  ![Kotlin] 1129. Shortest Path with Alternating Colors
