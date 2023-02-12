@@ -172,3 +172,6 @@
 - [[Problem]](https://leetcode.com/problems/shortest-path-with-alternating-colors/)
   [[Solution]](kotlin/shortestPathWithAlternatingColors.kt)
   ![Kotlin] 1129. Shortest Path with Alternating Colors
+- [[Problem]](https://leetcode.com/problems/minimum-fuel-cost-to-report-to-the-capital/)
+  [[Solution]](kotlin/minimumFuelCostToReportToTheCapital.kt)
+  ![Kotlin] 2477. Minimum Fuel Cost to Report to the Capital
