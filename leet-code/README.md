@@ -1,11 +1,12 @@
 # [leet code](https://leetcode.com/problemset/all/) problems
 
 ![solved](https://img.shields.io/badge/dynamic/json?style=flat-square&labelColor=black&color=%23ffa116&label=solved&query=solved&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fnothingelsematters&logo=leetcode&logoColor=yellow)
-![Rust] ![Kotlin] ![Go]
+![Rust] ![Kotlin] ![Go] ![Swift]
 
 [Rust]: https://img.shields.io/badge/Rust-grey?style=flat-square&logo=Rust&logoColor=crimson
 [Kotlin]: https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin
 [Go]: https://img.shields.io/badge/Go-grey?style=flat-square&logo=Go
+[Swift](https://img.shields.io/badge/Swift-grey?style=flat-square&logo=Swift)
 
 - [[Problem]](https://leetcode.com/problems/two-sum/)
   [[Solution]](rust/src/two_sum.rs)
@@ -175,3 +176,6 @@
 - [[Problem]](https://leetcode.com/problems/minimum-fuel-cost-to-report-to-the-capital/)
   [[Solution]](kotlin/minimumFuelCostToReportToTheCapital.kt)
   ![Kotlin] 2477. Minimum Fuel Cost to Report to the Capital
+- [[Problem]](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/)
+  [[Solution]](swift/countOddNumbersInAnIntervalRange.swift)
+  ![Swift] 1523. Count Odd Numbers in an Interval Range
