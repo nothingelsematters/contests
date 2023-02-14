@@ -179,3 +179,6 @@
 - [[Problem]](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/)
   [[Solution]](swift/countOddNumbersInAnIntervalRange.swift)
   ![Swift] 1523. Count Odd Numbers in an Interval Range
+- [[Problem]](https://leetcode.com/problems/add-binary/)
+  [[Solution]](kotlin/addBinary.kt)
+  ![Kotlin] 67. Add Binary
