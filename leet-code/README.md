@@ -182,3 +182,6 @@
 - [[Problem]](https://leetcode.com/problems/add-binary/)
   [[Solution]](kotlin/addBinary.kt)
   ![Kotlin] 67. Add Binary
+- [[Problem]](https://leetcode.com/problems/add-to-array-form-of-integer/)
+  [[Solution]](swift/addToArrayFormOfInteger.swift)
+  ![Swift] 989. Add to Array-Form of Integer
