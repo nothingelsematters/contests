@@ -185,3 +185,6 @@
 - [[Problem]](https://leetcode.com/problems/add-to-array-form-of-integer/)
   [[Solution]](swift/addToArrayFormOfInteger.swift)
   ![Swift] 989. Add to Array-Form of Integer
+- [[Problem]](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+  [[Solution]](swift/maximumDepthOfBinaryTree.swift)
+  ![Swift] 104. Maximum Depth of Binary Tree
