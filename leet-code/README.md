@@ -188,3 +188,9 @@
 - [[Problem]](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
   [[Solution]](swift/maximumDepthOfBinaryTree.swift)
   ![Swift] 104. Maximum Depth of Binary Tree
+- [[Problem]](https://leetcode.com/problems/minimum-distance-between-bst-nodes/)
+  [[Solution]](swift/minimumDistanceBetweenBstNodes.swift)
+  ![Swift] 783. Minimum Distance Between BST Nodes
+- [[Problem]](https://leetcode.com/problems/invert-binary-tree/)
+  [[Solution]](kotlin/invertBinaryTree.kt)
+  ![Kotlin] 226. Invert Binary Tree
