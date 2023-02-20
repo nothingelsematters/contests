@@ -197,3 +197,6 @@
 - [[Problem]](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
   [[Solution]](kotlin/binaryTreeZigzagLevelOrderTraversal.kt)
   ![Kotlin] 103. Binary Tree Zigzag Level Order Traversal
+- [[Problem]](https://leetcode.com/problems/search-insert-position/)
+  [[Solution]](rust/src/search_insert_position.rs)
+  ![Rust] 35. Search Insert Position
