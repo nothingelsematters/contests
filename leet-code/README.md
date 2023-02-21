@@ -200,3 +200,6 @@
 - [[Problem]](https://leetcode.com/problems/search-insert-position/)
   [[Solution]](rust/src/search_insert_position.rs)
   ![Rust] 35. Search Insert Position
+- [[Problem]](https://leetcode.com/problems/single-element-in-a-sorted-array/)
+  [[Solution]](swift/singleElementInASortedArray.swift)
+  ![Swift] 540. Single Element in a Sorted Array
