@@ -203,3 +203,6 @@
 - [[Problem]](https://leetcode.com/problems/single-element-in-a-sorted-array/)
   [[Solution]](swift/singleElementInASortedArray.swift)
   ![Swift] 540. Single Element in a Sorted Array
+- [[Problem]](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)
+  [[Solution]](swift/capacityToShipPackagesWithinDDays.swift)
+  ![Swift] 1011. Capacity To Ship Packages Within D Days
