@@ -6,7 +6,7 @@
 [Rust]: https://img.shields.io/badge/Rust-grey?style=flat-square&logo=Rust&logoColor=crimson
 [Kotlin]: https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin
 [Go]: https://img.shields.io/badge/Go-grey?style=flat-square&logo=Go
-[Swift](https://img.shields.io/badge/Swift-grey?style=flat-square&logo=Swift)
+[Swift]: https://img.shields.io/badge/Swift-grey?style=flat-square&logo=Swift
 
 - [[Problem]](https://leetcode.com/problems/two-sum/)
   [[Solution]](rust/src/two_sum.rs)
