@@ -1,20 +1,19 @@
 private fun inputBufferedReader() = System.`in`.bufferedReader()
 
-fun getFullInput(): String = inputBufferedReader().readText().trimEnd()
+private fun getFullInput(): String = inputBufferedReader().readText().trimEnd()
 
-fun <T> mapLines(mapper: (String) -> T): MutableList<T> =
+fun lines(): List<String> = mapLines { it }
+
+fun <T> mapLines(mapper: (String) -> T): List<T> =
     inputBufferedReader().useLines { lines -> lines.map(mapper).toMutableList() }
 
-fun <T> mapBlocks(mapper: (List<String>) -> T): MutableList<T> =
+fun <T> mapBlocks(mapper: (List<String>) -> T): List<T> =
     getFullInput().splitToSequence("\n\n").map { mapper(it.lines()) }.toMutableList()
 
 // Parsing utilities
 
-fun String.toInts(vararg delimiters: String = arrayOf(" ", ",")): MutableList<Int> =
+fun String.toInts(vararg delimiters: String = arrayOf(" ", ",")): List<Int> =
     splitToSequence(*delimiters).filter { it.isNotEmpty() }.map { it.toInt() }.toMutableList()
-
-fun String.toLongs(vararg delimiters: String = arrayOf(" ", ",")): MutableList<Long> =
-    splitToSequence(*delimiters).filter { it.isNotEmpty() }.map { it.toLong() }.toMutableList()
 
 // Error handling utilities
 
