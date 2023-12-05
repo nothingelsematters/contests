@@ -1,88 +1,95 @@
 # [Advent Of Code 2020](https://adventofcode.com/2020/)
 
-- [Day 1: Report Repair](#day-1-report-repair)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day1.kt)
-  [![Haskell](https://img.shields.io/badge/Haskell-grey?style=flat-square&logo=Haskell)](Day1.hs)
+- [[Problem]](#day-1-report-repair)
+  Solutions: [![Kotlin]](Day1.kt) [![Haskell]](Day1.hs)
+  Day 1: Report Repair
+- [[Problem]](#day-2-password-philosophy)
+  Solution: [![Kotlin]](Day2.kt)
+  Day 2: Password Philosophy
+- [[Problem]](#day-3-toboggan-trajectory)
+  Solution: [![Kotlin]](Day3.kt)
+  Day 3: Toboggan Trajectory
+- [[Problem]](#day-4-passport-processing)
+  Solution: [![Kotlin]](Day4.kt)
+  Day 4: Passport Processing
+- [[Problem]](#day-5-binary-boarding)
+  Solution: [![Kotlin]](Day5.kt)
+  Day 5: Binary Boarding
+- [[Problem]](#day-6-custom-customs)
+  Solution: [![Kotlin]](Day6.kt)
+  Day 6: Custom Customs
+- [[Problem]](#day-7-handy-haversacks)
+  Solution: [![Kotlin]](Day7.kt)
+  Day 7: Handy Haversacks
+- [[Problem]](#day-8-handheld-halting)
+  Solution: [![Kotlin]](Day8.kt)
+  Day 8: Handheld Halting
+- [[Problem]](#day-9-encoding-error)
+  Solutions: [![Kotlin]](Day9.kt) [![Rust]](Day9.rs)
+  Day 9: Encoding Error
+- [[Problem]](#day-10-adapter-array)
+  Solutions: [![OCaml]](Day10.ml) [![PostgreSQL]](Day10.sql)
+  Day 10: Adapter Array
+- [[Problem]](#day-11-seating-system)
+  Solutions: [![Kotlin]](Day11.kt) [![Scala]](Day11.scala)
+  Day 11: Seating System
+- [[Problem]](#day-12-rain-risk)
+  Solutions: [![Kotlin]](Day12.kt) [![Swift]](Day12.swift)
+  Day 12: Rain Risk
+- [[Problem]](#day-13-shuttle-search)
+  Solutions: [![Kotlin]](Day13.kt) [![Go]](Day13.go)
+  Day 13: Shuttle Search
+- [[Problem]](#day-14-docking-data)
+  Solution: [![Kotlin]](Day14.kt)
+  Day 14: Docking Data
+- [[Problem]](#day-15-rambunctious-recitation)
+  Solutions: [![Kotlin]](Day15.kt) [![Julia]](Day15.jl)
+  Day 15: Rambunctious Recitation
+- [[Problem]](#day-16-ticket-translation)
+  Solution: [![Kotlin]](Day16.kt)
+  Day 16: Ticket Translation
+- [[Problem]](#day-17-conway-cubes)
+  Solutions: [![Kotlin]](Day17.kt) [![TypeScript]](Day17.ts)
+  Day 17: Conway Cubes
+- [[Problem]](#day-18-operation-order)
+  Solutions: [![Kotlin]](Day18.kt)
+  [![lalr-generator]](https://github.com/nothingelsematters/lalr-generator)
+  Day 18: Operation Order
+- [[Problem]](#day-19-monster-messages)
+  Solutions: [![Kotlin]](Day19.kt) [![Ruby]](Day19.rb)
+  Day 19: Monster Messages
+- [[Problem]](#day-20-jurassic-jigsaw)
+  Solution: [![Kotlin]](Day20.kt)
+  Day 20: Jurassic Jigsaw
+- [[Problem]](#day-21-allergen-assessment)
+  Solution: [![Kotlin]](Day21.kt)
+  Day 21: Allergen Assessment
+- [[Problem]](#day-22-crab-combat)
+  Solution: [![Kotlin]](Day22.kt)
+  Day 22: Crab Combat
+- [[Problem]](#day-23-crab-cups)
+  Solution: [![Kotlin]](Day23.kt)
+  Day 23: Crab Cups
+- [[Problem]](#day-24-lobby-layout)
+  Solution: [![Kotlin]](Day24.kt)
+  Day 24: Lobby Layout
+- [[Problem]](#day-25-combo-breaker)
+  Solution: [![Kotlin]](Day25.kt)
+  Day 25: Combo Breaker
 
-- [Day 2: Password Philosophy](#day-2-password-philosophy)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day2.kt)
+[Kotlin]: https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin
+[Haskell]: https://img.shields.io/badge/Haskell-grey?style=flat-square&logo=Haskell
+[Rust]: https://img.shields.io/badge/Rust-grey?style=flat-square&logo=Rust
+[OCaml]: https://img.shields.io/badge/OCaml-grey?style=flat-square&logo=OCaml
+[PostgreSQL]: https://img.shields.io/badge/PostgreSQL-grey?style=flat-square&logo=PostgreSQL
+[Scala]: https://img.shields.io/badge/Scala-grey?style=flat-square&logo=Scala
+[Swift]: https://img.shields.io/badge/Swift-grey?style=flat-square&logo=Swift
+[Go]: https://img.shields.io/badge/Go-grey?style=flat-square&logo=Go
+[Julia]: https://img.shields.io/badge/Julia-grey?style=flat-square&logo=Julia
+[TypeScript]: https://img.shields.io/badge/TypeScript-grey?style=flat-square&logo=TypeScript
+[lalr-generator]: https://img.shields.io/badge/nothingelsematters-lalr--generator-blue?style=flat-square&logo=GitHub
+[Ruby]: https://img.shields.io/badge/Ruby-grey?style=flat-square&logo=Ruby
 
-- [Day 3: Toboggan Trajectory](#day-3-toboggan-trajectory)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day3.kt)
-
-- [Day 4: Passport Processing](#day-4-passport-processing)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day4.kt)
-
-- [Day 5: Binary Boarding](#day-5-binary-boarding)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day5.kt)
-
-- [Day 6: Custom Customs](#day-6-custom-customs)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day6.kt)
-
-- [Day 7: Handy Haversacks](#day-7-handy-haversacks)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day7.kt)
-
-- [Day 8: Handheld Halting](#day-8-handheld-halting)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day8.kt)
-
-- [Day 9: Encoding Error](#day-9-encoding-error)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day9.kt)
-  [![Rust](https://img.shields.io/badge/Rust-grey?style=flat-square&logo=Rust)](Day9.rs)
-
-- [Day 10: Adapter Array](#day-10-adapter-array)
-  [![OCaml](https://img.shields.io/badge/OCaml-grey?style=flat-square&logo=OCaml)](Day10.ml)
-  [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-grey?style=flat-square&logo=PostgreSQL)](Day10.sql)
-
-- [Day 11: Seating System](#day-11-seating-system)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day11.kt)
-  [![Scala](https://img.shields.io/badge/Scala-grey?style=flat-square&logo=Scala)](Day11.scala)
-
-- [Day 12: Rain Risk](#day-12-rain-risk)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day12.kt)
-  [![Swift](https://img.shields.io/badge/Swift-grey?style=flat-square&logo=Swift)](Day12.swift)
-
-- [Day 13: Shuttle Search](#day-13-shuttle-search)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day13.kt)
-
-- [Day 14: Docking Data](#day-14-docking-data)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day14.kt)
-
-- [Day 15: Rambunctious Recitation](#day-15-rambunctious-recitation)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day15.kt)
-  [![Julia](https://img.shields.io/badge/Julia-grey?style=flat-square&logo=Julia)](Day15.jl)
-
-- [Day 16: Ticket Translation](#day-16-ticket-translation)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day16.kt)
-
-- [Day 17: Conway Cubes](#day-17-conway-cubes)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day17.kt)
-  [![TypeScript](https://img.shields.io/badge/TypeScript-grey?style=flat-square&logo=TypeScript)](Day17.ts)
-
-- [Day 18: Operation Order](#day-18-operation-order)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day18.kt)
-  [![lalr-generator](https://img.shields.io/badge/nothingelsematters-lalr--generator-blue?style=flat-square&logo=GitHub)](https://github.com/nothingelsematters/lalr-generator)
-
-- [Day 19: Monster Messages](#day-19-monster-messages)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day19.kt)
-  [![Ruby](https://img.shields.io/badge/Ruby-grey?style=flat-square&logo=Ruby)](Day19.rb)
-
-- [Day 20: Jurassic Jigsaw](#day-20-jurassic-jigsaw)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day20.kt)
-
-- [Day 21: Allergen Assessment](#day-21-allergen-assessment)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day21.kt)
-
-- [Day 22: Crab Combat](#day-22-crab-combat)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day22.kt)
-
-- [Day 23: Crab Cups](#day-23-crab-cups)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day23.kt)
-
-- [Day 24: Lobby Layout](#day-24-lobby-layout)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day24.kt)
-
-- [Day 25: Combo Breaker](#day-25-combo-breaker)
-  [![Kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=Kotlin)](Day25.kt)
 
 ## [Day 1: Report Repair](https://adventofcode.com/2020/day/1)
 

@@ -22,11 +22,11 @@
   - [2023](advent-of-code/2023) \
     ![Advent-2023] [![Kotlin]](advent-of-code/2023/src)
 
-- [leet code](leet-code) \
+- [leet code](leet-code): [@nothingelsematters](https://leetcode.com/nothingelsematters) \
   [![LeetCode]](https://leetcode.com/nothingelsematters)
   ![Kotlin] ![Rust] ![Go] ![Swift]
 
-- [code wars](codewars) \
+- [code wars](codewars): [@nothingelsematters](https://codewars.com/users/nothingelsematters) \
   [![CodeWars]](https://www.codewars.com/users/nothingelsematters)
   ![Kotlin]
 
