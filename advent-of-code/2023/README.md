@@ -7,3 +7,4 @@ Recommended to use [aoc-cli](https://github.com/scarvalhojr/aoc-cli)
 - [[Problem]](https://adventofcode.com/2023/day/3) [[Solution]](src/Day03.kt) Day 3: Gear Ratios
 - [[Problem]](https://adventofcode.com/2023/day/4) [[Solution]](src/Day04.kt) Day 4: Scratchcards
 - [[Problem]](https://adventofcode.com/2023/day/5) [[Solution]](src/Day05.kt) Day 5: If You Give A Seed A Fertilizer
+- [[Problem]](https://adventofcode.com/2023/day/6) [[Solution]](src/Day06.kt) Day 6: Wait For It
