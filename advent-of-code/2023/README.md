@@ -8,3 +8,4 @@ Recommended to use [aoc-cli](https://github.com/scarvalhojr/aoc-cli)
 - [[Problem]](https://adventofcode.com/2023/day/4) [[Solution]](src/Day04.kt) Day 4: Scratchcards
 - [[Problem]](https://adventofcode.com/2023/day/5) [[Solution]](src/Day05.kt) Day 5: If You Give A Seed A Fertilizer
 - [[Problem]](https://adventofcode.com/2023/day/6) [[Solution]](src/Day06.kt) Day 6: Wait For It
+- [[Problem]](https://adventofcode.com/2023/day/7) [[Solution]](src/Day07.kt) Day 7: Camel Cards
