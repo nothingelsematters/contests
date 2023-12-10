@@ -4,7 +4,22 @@ operator fun <T> List<T>.get(range: IntRange) = subList(range.first, range.last 
 
 // Two dimensional utilities
 
-data class InnerIndexedValue<T>(val i: Int, val j: Int, val value: T)
+data class Index2(val i: Int, val j: Int) {
 
-fun <T> Iterable<Iterable<T>>.innerIndexedSequence(): Sequence<InnerIndexedValue<T>> =
-    asSequence().flatMapIndexed { i, row -> row.mapIndexed { j, value -> InnerIndexedValue(i, j, value) } }
+    operator fun plus(rhs: Index2) = Index2(i + rhs.i, j + rhs.j)
+}
+
+operator fun <T> List<List<T>>.get(index: Index2) = this[index.i][index.j]
+
+operator fun <T> MutableList<MutableList<T>>.set(index: Index2, value: T) {
+    this[index.i][index.j] = value
+}
+
+fun <T> List<List<T>>.getOrNull(index: Index2) = getOrNull(index.i)?.getOrNull(index.j)
+
+data class Indexed2Value<T>(val index2: Index2, val value: T)
+
+fun <T> Iterable<Iterable<T>>.innerIndexedSequence(): Sequence<Indexed2Value<T>> =
+    asSequence().flatMapIndexed { i, row ->
+        row.mapIndexed { j, value -> Indexed2Value(Index2(i, j), value) }
+    }
