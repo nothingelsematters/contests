@@ -12,3 +12,4 @@ Recommended to use [aoc-cli](https://github.com/scarvalhojr/aoc-cli)
 - [[Problem]](https://adventofcode.com/2023/day/8) [[Solution]](src/Day08.kt) Day 8: Haunted Wasteland
 - [[Problem]](https://adventofcode.com/2023/day/9) [[Solution]](src/Day09.kt) Day 9: Mirage Maintenance
 - [[Problem]](https://adventofcode.com/2023/day/10) [[Solution]](src/Day10.kt) Day 10: Pipe Maze
+- [[Problem]](https://adventofcode.com/2023/day/11) [[Solution]](src/Day11.kt) Day 11: Cosmic Expansion
