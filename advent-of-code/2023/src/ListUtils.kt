@@ -1,7 +1,5 @@
 fun <T> List<T>.toPair() = component1() to component2()
 
-operator fun <T> List<T>.get(range: IntRange) = subList(range.first, range.last + 1)
-
 // Two dimensional utilities
 
 data class Index2(val i: Int, val j: Int) {
@@ -11,7 +9,7 @@ data class Index2(val i: Int, val j: Int) {
 
 operator fun <T> List<List<T>>.get(index: Index2) = this[index.i][index.j]
 
-operator fun <T> MutableList<MutableList<T>>.set(index: Index2, value: T) {
+operator fun <T> List<MutableList<T>>.set(index: Index2, value: T) {
     this[index.i][index.j] = value
 }
 
