@@ -2,6 +2,8 @@ fun <T> List<T>.toPair() = component1() to component2()
 
 // Two dimensional utilities
 
+fun <T> List<List<T>>.deepCopy(): List<List<T>> = map { it.toList() }
+
 data class Index2(val i: Int, val j: Int) {
 
     operator fun plus(rhs: Index2) = Index2(i + rhs.i, j + rhs.j)
