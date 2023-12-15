@@ -1,8 +1,19 @@
 fun <T> List<T>.toPair() = component1() to component2()
 
+fun <T> Sequence<T>.sumOfIndexed(selector: (Int, T) -> Int): Int =
+    asSequence().withIndex().sumOf { (i, it) -> selector(i, it) }
+
+fun <T> Iterable<T>.sumOfIndexed(selector: (Int, T) -> Int): Int =
+    asSequence().sumOfIndexed(selector)
+
+fun <T> Array<T>.sumOfIndexed(selector: (Int, T) -> Int): Int =
+    asSequence().sumOfIndexed(selector)
+
 // Two dimensional utilities
 
 fun <T> List<List<T>>.deepCopy(): List<List<T>> = map { it.toList() }
+
+fun <T> List<List<T>>.mutableDeepCopy(): List<MutableList<T>> = map { it.toMutableList() }
 
 data class Index2(val i: Int, val j: Int) {
 

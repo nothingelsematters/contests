@@ -45,7 +45,7 @@ fun main() {
 
         block.innerIndexedSequence()
             .flatMap { (index, _) ->
-                val copy = block.map { it.toMutableList() }
+                val copy = block.mutableDeepCopy()
                 copy[index] = !copy[index]
                 findReflectionLineScore(copy)
             }

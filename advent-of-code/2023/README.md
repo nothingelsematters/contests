@@ -16,3 +16,4 @@ Recommended to use [aoc-cli](https://github.com/scarvalhojr/aoc-cli)
 - [[Problem]](https://adventofcode.com/2023/day/12) [[Solution]](src/Day12.kt) Day 12: Hot Springs
 - [[Problem]](https://adventofcode.com/2023/day/13) [[Solution]](src/Day13.kt) Day 13: Point of Incidence
 - [[Problem]](https://adventofcode.com/2023/day/14) [[Solution]](src/Day14.kt) Day 14: Parabolic Reflector Dish
+- [[Problem]](https://adventofcode.com/2023/day/15) [[Solution]](src/Day15.kt) Day 15: Lens Library

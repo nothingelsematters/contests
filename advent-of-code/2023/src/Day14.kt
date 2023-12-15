@@ -59,18 +59,18 @@ private fun rollRocksBackwards(
 }
 
 private fun calculateLoad(map: List<List<Cell>>): Int =
-    map.asReversed().asSequence().withIndex().sumOf { (i, row) ->
+    map.asReversed().sumOfIndexed { i, row ->
         (i + 1) * row.asSequence().filter { it == Cell.RoundedRock }.count()
     }
 
 private fun part1(map: List<List<Cell>>): Int {
-    val fallenMap = map.map { it.toMutableList() }
+    val fallenMap = map.mutableDeepCopy()
     rollRocks(fallenMap, ::rollNorthIndex)
     return calculateLoad(fallenMap)
 }
 
 private fun part2(map: List<List<Cell>>): Int {
-    val fallenMap = map.map { it.toMutableList() }
+    val fallenMap = map.mutableDeepCopy()
     val visited = mutableMapOf<List<List<Cell>>, Int>()
 
     var i = 0

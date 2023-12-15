@@ -51,8 +51,7 @@ private fun getTotalWinnings(
     lines.asSequence()
         .map { (cards, bid) -> Hand(cards, bid, cardStrength, countCards) }
         .sorted()
-        .withIndex()
-        .sumOf { (index, hand) -> (index + 1) * hand.bid }
+        .sumOfIndexed { index, hand -> (index + 1) * hand.bid }
 
 fun main() {
     val lines = mapLines {
