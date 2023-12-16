@@ -3,30 +3,16 @@ private data class Pipe(val directions: Pair<Direction, Direction>) {
     companion object {
         fun parse(representation: Char): Pipe? {
             val directions = when (representation) {
-                '|' -> Direction.North to Direction.South
-                'J' -> Direction.North to Direction.West
-                'L' -> Direction.North to Direction.East
-                '7' -> Direction.South to Direction.West
-                'F' -> Direction.South to Direction.East
-                '-' -> Direction.West to Direction.East
+                '|' -> Direction.Up to Direction.Down
+                'J' -> Direction.Up to Direction.Left
+                'L' -> Direction.Up to Direction.Right
+                '7' -> Direction.Down to Direction.Left
+                'F' -> Direction.Down to Direction.Right
+                '-' -> Direction.Left to Direction.Right
                 else -> return null
             }
             return Pipe(directions)
         }
-    }
-}
-
-private enum class Direction(val index2: Index2) {
-    North(Index2(-1, 0)),
-    South(Index2(1, 0)),
-    West(Index2(0, -1)),
-    East(Index2(0, 1));
-
-    fun reversed() = when (this) {
-        North -> South
-        South -> North
-        West -> East
-        East -> West
     }
 }
 
@@ -102,14 +88,14 @@ private fun part2(loop: List<Indexed2Value<Pipe>>): Int =
 
                 val startPipe = indexPipes[i].value.directions
 
-                if (startPipe == Direction.North to Direction.South) {
+                if (startPipe == Direction.Up to Direction.Down) {
                     previous = if (previous == null) indexPipes[i].index2 else null
                     i++
                     continue
                 }
 
                 i++
-                while (indexPipes[i].value.directions == Direction.West to Direction.East) {
+                while (indexPipes[i].value.directions == Direction.Left to Direction.Right) {
                     i++
                 }
 
