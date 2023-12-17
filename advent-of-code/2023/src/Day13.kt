@@ -43,7 +43,7 @@ fun main() {
     val second = rockBlocks.sumOf { block ->
         val initial = findReflectionLineScore(block).single()
 
-        block.innerIndexedSequence()
+        block.indexed2Sequence()
             .flatMap { (index, _) ->
                 val copy = block.mutableDeepCopy()
                 copy[index] = !copy[index]

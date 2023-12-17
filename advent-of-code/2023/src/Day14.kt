@@ -42,7 +42,7 @@ private fun rollRocks(
     fallenMap: List<MutableList<Cell>>,
     getIndex: (List<List<Cell>>, Index2) -> Index2,
 ) {
-    fallenMap.innerIndexedSequence().roll(fallenMap, getIndex)
+    fallenMap.indexed2Sequence().roll(fallenMap, getIndex)
 }
 
 private fun rollRocksBackwards(

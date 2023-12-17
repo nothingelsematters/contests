@@ -28,9 +28,12 @@ operator fun <T> List<MutableList<T>>.set(index: Index2, value: T) {
 
 fun <T> List<List<T>>.getOrNull(index: Index2) = getOrNull(index.i)?.getOrNull(index.j)
 
+val <T> List<List<T>>.lastIndex2: Index2
+    get() = Index2(lastIndex, last().lastIndex)
+
 data class Indexed2Value<T>(val index2: Index2, val value: T)
 
-fun <T> Iterable<Iterable<T>>.innerIndexedSequence(): Sequence<Indexed2Value<T>> =
+fun <T> Iterable<Iterable<T>>.indexed2Sequence(): Sequence<Indexed2Value<T>> =
     asSequence().flatMapIndexed { i, row ->
         row.mapIndexed { j, value -> Indexed2Value(Index2(i, j), value) }
     }

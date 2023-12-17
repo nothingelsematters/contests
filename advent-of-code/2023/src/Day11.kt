@@ -20,7 +20,7 @@ private fun galaxyDistances(
 
 fun main() {
     val map = mapLines { line -> line.map { it == '#' } }
-    val galaxies = map.innerIndexedSequence().filter { it.value }.map { it.index2 }.toList()
+    val galaxies = map.indexed2Sequence().filter { it.value }.map { it.index2 }.toList()
 
     val emptyRows = map.indices.toMutableSet()
     galaxies.forEach { emptyRows -= it.i }
