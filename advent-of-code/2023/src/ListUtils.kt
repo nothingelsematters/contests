@@ -18,6 +18,8 @@ fun <T> List<List<T>>.mutableDeepCopy(): List<MutableList<T>> = map { it.toMutab
 data class Index2(val i: Int, val j: Int) {
 
     operator fun plus(rhs: Index2) = Index2(i + rhs.i, j + rhs.j)
+
+    operator fun times(rhs: Int) = Index2(i * rhs, j * rhs)
 }
 
 operator fun <T> List<List<T>>.get(index: Index2) = this[index.i][index.j]
