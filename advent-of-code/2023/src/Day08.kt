@@ -45,9 +45,7 @@ private fun lowestCommonMultiplier(ints: List<Int>): Long {
         }
     }
 
-    return multipliers.asSequence().fold(1L) { acc, (multiplier, number) ->
-        acc * multiplier * number
-    }
+    return multipliers.asSequence().multiplicationOf { (multiplier, number) -> multiplier.toLong() * number }
 }
 
 private fun part2(directions: List<Boolean>, connections: Map<String, Pair<String, String>>): Long {

@@ -1,16 +1,3 @@
-private data class Interval(val first: Long, val last: Long = first) {
-
-    val size = last - first + 1
-
-    operator fun plus(rhs: Long): Interval = Interval(first + rhs, last + rhs)
-
-    operator fun minus(rhs: Long): Interval = Interval(first - rhs, last - rhs)
-
-    operator fun contains(rhs: Long) = rhs in first..last
-
-    operator fun contains(rhs: Interval) = rhs.first in first..last && rhs.last in first..last
-}
-
 private fun foldMappings(
     maps: List<List<Pair<Long, Interval>>>,
     initialIntervals: List<Interval>,
@@ -23,26 +10,26 @@ private fun foldMappings(
                 fromRanges.flatMap { current ->
                     when {
                         current in source -> {
-                            resultRanges += current - source.first + destination
+                            resultRanges += current - source.start + destination
                             sequenceOf()
                         }
 
                         source in current -> {
                             resultRanges += Interval(0, source.size) + destination
                             sequenceOf(
-                                Interval(current.first, source.first - 1),
-                                Interval(source.last + 1, current.last),
+                                Interval(current.start, source.start - 1),
+                                Interval(source.end + 1, current.end),
                             )
                         }
 
-                        current.first in source -> {
-                            resultRanges += Interval(current.first - source.first, source.size) + destination
-                            sequenceOf(Interval(source.last + 1, current.last))
+                        current.start in source -> {
+                            resultRanges += Interval(current.start - source.start, source.size) + destination
+                            sequenceOf(Interval(source.end + 1, current.end))
                         }
 
-                        current.last in source -> {
-                            resultRanges += Interval(0, current.last - source.first) + destination
-                            sequenceOf(Interval(current.first, source.first - 1))
+                        current.end in source -> {
+                            resultRanges += Interval(0, current.end - source.start) + destination
+                            sequenceOf(Interval(current.start, source.start - 1))
                         }
 
                         else -> sequenceOf(current)
@@ -53,7 +40,7 @@ private fun foldMappings(
 
             resultRanges + leftRanges
         }
-    }.minOf { it.first }
+    }.minOf { it.start }
 
 fun main() {
     val (seedsString, mapString) = getFullInput().split("\n\n", limit = 2)

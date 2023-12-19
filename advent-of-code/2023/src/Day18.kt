@@ -18,19 +18,17 @@ private fun getTrenchSize(instructions: List<Pair<Direction, Int>>): Long {
         .sorted()
         .distinct()
         .zipWithNext()
-        .fold(0L to listOf<IntRange>()) { (sum, previousHorizontalIntervals), (a, b) ->
+        .fold(0L to listOf<Interval>()) { (sum, previousHorizontalIntervals), (a, b) ->
             val currentHorizontalIntervals = verticalIntervals.asSequence()
                 .filter { a in it.second && b in it.second }
                 .map { it.first }
                 .sorted()
-                .chunked(2) { (c, d) -> c..d }
+                .chunked(2) { (c, d) -> Interval(c, d) }
                 .toList()
 
-            val intervalLength = currentHorizontalIntervals.sumOf { it.last.toLong() - it.first + 1 }
-            val overlappingLength = currentHorizontalIntervals.sumOf { range ->
-                previousHorizontalIntervals.asSequence()
-                    .filter { it.first in range || it.last in range || range.first in it || range.last in it }
-                    .sumOf { minOf(it.last, range.last) - maxOf(it.first, range.first) + 1 }
+            val intervalLength = currentHorizontalIntervals.sumOf { it.end - it.start + 1 }
+            val overlappingLength = currentHorizontalIntervals.sumOf { interval ->
+                previousHorizontalIntervals.sumOf { (it intersect interval).size }
             }
 
             sum + intervalLength * (b - a + 1) - overlappingLength to currentHorizontalIntervals

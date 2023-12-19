@@ -4,6 +4,8 @@ fun getFullInput(): String = inputBufferedReader().readText().trimEnd()
 
 fun lines(): List<String> = mapLines { it }
 
+fun blocks(): List<List<String>> = mapBlocks { it }
+
 fun <T> mapLines(mapper: (String) -> T): List<T> =
     inputBufferedReader().useLines { lines -> lines.map(mapper).toMutableList() }
 

@@ -20,3 +20,4 @@ Recommended to use [aoc-cli](https://github.com/scarvalhojr/aoc-cli)
 - [[Problem]](https://adventofcode.com/2023/day/16) [[Solution]](src/Day16.kt) Day 16: The Floor Will Be Lava
 - [[Problem]](https://adventofcode.com/2023/day/17) [[Solution]](src/Day17.kt) Day 17: Clumsy Crucible
 - [[Problem]](https://adventofcode.com/2023/day/18) [[Solution]](src/Day18.kt) Day 18: Lavaduct Lagoon
+- [[Problem]](https://adventofcode.com/2023/day/19) [[Solution]](src/Day19.kt) Day 19: Aplenty
