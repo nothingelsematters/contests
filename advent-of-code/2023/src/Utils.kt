@@ -56,3 +56,43 @@ data class Interval(override val start: Long, val end: Long = start) : ClosedRan
         val EMPTY = Interval(0, -1)
     }
 }
+
+// Algorithms
+
+/**
+ * Eratosthenes Sieve
+ */
+private fun primes(n: Int): Set<Int> {
+    val primes = (2..n).toMutableSet()
+
+    for (i in 2..n) {
+        if (i !in primes) continue
+        primes.removeAll(2 * i..n step i)
+    }
+
+    return primes
+}
+
+fun List<Int>.lowestCommonMultiplier(): Long {
+    val primes = primes(maxOrNull() ?: return 0)
+    val multipliers = mutableMapOf<Int, Int>()
+
+    for (i in this) {
+        var current = i
+
+        for (j in primes) {
+            var count = 0
+            while (current % j == 0) {
+                count++
+                current /= j
+            }
+
+            if (multipliers.getOrDefault(j, 0) < count) {
+                multipliers[j] = count
+            }
+        }
+    }
+
+    return multipliers.asSequence()
+        .multiplicationOf { (multiplier, number) -> multiplier.toLong() * number }
+}

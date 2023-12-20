@@ -11,43 +11,6 @@ private fun part1(directions: List<Boolean>, connections: Map<String, Pair<Strin
     return steps
 }
 
-/**
- * Eratosthenes Sieve
- */
-private fun primes(n: Int): Set<Int> {
-    val primes = (2..n).toMutableSet()
-
-    for (i in 2..n) {
-        if (i !in primes) continue
-        primes.removeAll(2 * i..n step i)
-    }
-
-    return primes
-}
-
-private fun lowestCommonMultiplier(ints: List<Int>): Long {
-    val primes = primes(ints.max())
-    val multipliers = mutableMapOf<Int, Int>()
-
-    for (i in ints) {
-        var current = i
-
-        for (j in primes) {
-            var count = 0
-            while (current % j == 0) {
-                count++
-                current /= j
-            }
-
-            if (multipliers.getOrDefault(j, 0) < count) {
-                multipliers[j] = count
-            }
-        }
-    }
-
-    return multipliers.asSequence().multiplicationOf { (multiplier, number) -> multiplier.toLong() * number }
-}
-
 private fun part2(directions: List<Boolean>, connections: Map<String, Pair<String, String>>): Long {
     val cycles = connections.keys.asSequence()
         .filter { it.endsWith("A") }
@@ -69,7 +32,7 @@ private fun part2(directions: List<Boolean>, connections: Map<String, Pair<Strin
         }
         .toList()
 
-    return lowestCommonMultiplier(cycles)
+    return cycles.lowestCommonMultiplier()
 }
 
 fun main() {
