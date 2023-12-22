@@ -1,3 +1,5 @@
+// Reading
+
 private fun inputBufferedReader() = System.`in`.bufferedReader()
 
 fun getFullInput(): String = inputBufferedReader().readText().trimEnd()
@@ -12,7 +14,7 @@ fun <T> mapLines(mapper: (String) -> T): List<T> =
 fun <T> mapBlocks(mapper: (List<String>) -> T): List<T> =
     getFullInput().splitToSequence("\n\n").map { mapper(it.lines()) }.toMutableList()
 
-// Parsing utilities
+// Parsing
 
 fun String.toInts(vararg delimiters: String = arrayOf(" ", ",")): List<Int> =
     splitToSequence(*delimiters).filter { it.isNotEmpty() }.map { it.toInt() }.toMutableList()
@@ -20,7 +22,7 @@ fun String.toInts(vararg delimiters: String = arrayOf(" ", ",")): List<Int> =
 fun String.toLongs(vararg delimiters: String = arrayOf(" ", ",")): List<Long> =
     splitToSequence(*delimiters).filter { it.isNotEmpty() }.map { it.toLong() }.toMutableList()
 
-// Error handling utilities
+// Error handling
 
 fun <T> T?.unwrap(): T = this ?: expect()
 

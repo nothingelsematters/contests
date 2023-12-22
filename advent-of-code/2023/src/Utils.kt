@@ -6,7 +6,7 @@ fun <T> Sequence<T>.multiplicationOf(function: (T) -> Long): Long =
 fun <T> Iterable<T>.multiplicationOf(function: (T) -> Long): Long = asSequence().multiplicationOf(function)
 
 fun <T> Sequence<T>.sumOfIndexed(selector: (Int, T) -> Int): Int =
-    asSequence().withIndex().sumOf { (i, it) -> selector(i, it) }
+    withIndex().sumOf { (i, it) -> selector(i, it) }
 
 fun <T> Iterable<T>.sumOfIndexed(selector: (Int, T) -> Int): Int = asSequence().sumOfIndexed(selector)
 
