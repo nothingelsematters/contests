@@ -57,6 +57,9 @@ data class Interval(override val start: Long, val end: Long = start) : ClosedRan
     }
 }
 
+data class Point(val x: Long, val y: Long, val z: Long)
+
+
 // Algorithms
 
 /**

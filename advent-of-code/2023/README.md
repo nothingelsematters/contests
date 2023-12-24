@@ -25,3 +25,4 @@ Recommended to use [aoc-cli](https://github.com/scarvalhojr/aoc-cli)
 - [[Problem]](https://adventofcode.com/2023/day/21) [[Solution]](src/Day21.kt) Day 21: Step Counter
 - [[Problem]](https://adventofcode.com/2023/day/22) [[Solution]](src/Day22.kt) Day 22: Sand Slabs
 - [[Problem]](https://adventofcode.com/2023/day/23) [[Solution]](src/Day23.kt) Day 23: A Long Walk
+- [[Problem]](https://adventofcode.com/2023/day/24) [[Solution]](src/Day24.kt) Day 24: Never Tell Me The Odds

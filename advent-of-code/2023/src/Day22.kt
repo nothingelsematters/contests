@@ -1,5 +1,3 @@
-private data class Point(val x: Int, val y: Int, val z: Int)
-
 private class Brick(val from: Point, val to: Point) {
 
     val type = when {
@@ -78,7 +76,7 @@ private fun disintegratedBricksFallen(low: List<List<Brick>>, high: List<List<Br
 fun main() {
     val bricks = mapLines { line ->
         val (a, b) = line.splitToSequence('~')
-            .map { it.toInts() }
+            .map { it.toLongs() }
             .map { (x, y, z) -> Point(x, y, z) }
             .toList()
         Brick(a, b)
