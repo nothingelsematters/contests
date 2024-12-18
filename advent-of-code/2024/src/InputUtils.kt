@@ -11,6 +11,9 @@ fun blocks(): List<List<String>> = mapBlocks { it }
 fun <T> mapLines(mapper: (String) -> T): List<T> =
     inputBufferedReader().useLines { lines -> lines.map(mapper).toMutableList() }
 
+fun <T> mapLinesIndexed(mapper: (IndexedValue<String>) -> T): List<T> =
+    inputBufferedReader().useLines { lines -> lines.withIndex().map(mapper).toMutableList() }
+
 fun <T> mapBlocks(mapper: (List<String>) -> T): List<T> =
     getFullInput().splitToSequence("\n\n").map { mapper(it.lines()) }.toMutableList()
 

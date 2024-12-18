@@ -4,6 +4,8 @@ data class Point(val x: Int, val y: Int) {
 
     operator fun plus(other: Point) = Point(x + other.x, y + other.y)
 
+    operator fun minus(other: Point) = Point(x - other.x, y - other.y)
+
     operator fun times(other: Int) = Point(x * other, y * other)
 }
 
@@ -18,5 +20,12 @@ enum class Direction(val point: Point) {
         Down -> Up
         Left -> Right
         Right -> Left
+    }
+
+    fun clockwise() = when (this) {
+        Up -> Right
+        Right -> Down
+        Down -> Left
+        Left -> Up
     }
 }

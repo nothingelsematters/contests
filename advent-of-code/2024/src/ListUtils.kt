@@ -1,5 +1,15 @@
 fun <T> List<T>.toPair() = component1() to component2()
 
+fun <T> List<T>.indexOfOrNull(element: T): Int? {
+    val index = indexOf(element)
+    return if (index == -1) null else index
+}
+
+fun <T> Sequence<T>.indexOfFirstOrNull(predicate: (T) -> Boolean): Int? {
+    val index = indexOfFirst(predicate)
+    return if (index == -1) null else index
+}
+
 // Two dimensional
 
 fun <T> List<List<T>>.deepCopy(): List<List<T>> = map { it.toList() }
