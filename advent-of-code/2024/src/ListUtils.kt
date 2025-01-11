@@ -5,18 +5,23 @@ fun <T> List<T>.indexOfOrNull(element: T): Int? {
     return if (index == -1) null else index
 }
 
-fun <T> Sequence<T>.indexOfFirstOrNull(predicate: (T) -> Boolean): Int? {
-    val index = indexOfFirst(predicate)
-    return if (index == -1) null else index
+infix fun Int.within(size: Int): Int {
+    var index = this
+    if (index < 0) {
+        index += size * (-index / size + 1)
+    }
+    return index % size
 }
 
-// Two dimensional
+// Sequence
 
-fun <T> List<List<T>>.deepCopy(): List<List<T>> = map { it.toList() }
+fun Sequence<Int>.product(): Int = fold(1) { acc, i -> acc * i }
+
+// Two-dimensional
 
 fun <T> List<List<T>>.mutableDeepCopy(): List<MutableList<T>> = map { it.toMutableList() }
 
-// Two dimensional. Index
+// Two-dimensional. Index
 
 typealias Index2 = Point
 
@@ -33,9 +38,6 @@ operator fun <T> List<MutableList<T>>.set(index: Index2, value: T) {
 }
 
 fun <T> List<List<T>>.getOrNull(index: Index2): T? = getOrNull(index.i)?.getOrNull(index.j)
-
-val <T> List<List<T>>.lastIndex2: Index2
-    get() = Index2(lastIndex, last().lastIndex)
 
 data class Indexed2Value<T>(val index2: Index2, val value: T)
 
